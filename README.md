@@ -25,27 +25,20 @@ See below for a more detailed description.
 We are creating our own container if we choose to add implementation that isn't suitable to fit in the run.sh command.
 
 1. Ensure you are in the `docker` directory.
-
 ```
 $ cd docker
 ```
-
-1.5 (Optional) If permissions aren't set, make it so.
-
+(Optional) If permissions aren't set, make it so.
 ```
 $ chmod +x build.sh
 ```
-
 2. Build the container.
-
 ```
 $ ./build
 ```
 
 ### Build the application
-
 1. Ensure you are in the `scala` directory.
-
 ```
 $ cd ../scala
 ```
@@ -53,36 +46,29 @@ OR
 ```
 $ cd scala
 ```
-
 2. Compile the project. This will download any dependencies in the project.
-
 ```
 $ sbt package 
 ```
 
 ### Launch the container
-
 1. Modify `run.sh` to update the directory your yelp data. Here, I have simply downloaded the dataset and left it in my Downloads folder.
-
 ```
 #
 # CHANGE THIS PATH
 #
 YELPDIR=/home/$USER/Downloads/yelp_dataset_challenge_academic_dataset/
 ```
-
 2. Run the container
-
 ```
 $ ./run.sh
 ```
-
 This will give you a bash shell in the container.
 
 ### Running the application
 
 ```
-:/tmp# /usr/local/spark/bin/spark-submit --class "SimpleApp" /tmp/scala-2.10/simple-project_2.10-1.0.jar
+# /usr/local/spark/bin/spark-submit --class "SimpleApp" /tmp/scala-2.10/simple-project_2.10-1.0.jar
 ```
 
 We also have the liberty to recompile our Scala program and not have to restart the container.
