@@ -11,7 +11,7 @@ CS 491: Machine Learning
 
 See below for a more detailed description.
 
-## Dependencies
+## Dependencies to build and run project
 
 * Docker (~Docker version 1.5.0, build a8a31ef)
 * sbt (~sbt launcher version 0.13.7)
@@ -46,9 +46,14 @@ OR
 ```
 $ cd scala
 ```
-2. Compile the project. This will download any dependencies in the project.
+2. Build the fat jar. First, enter the sbt shell.
 ```
-$ sbt package 
+$ sbt
+```
+Then, run the `assembly` task which will build the fat jar
+```
+(spark-shell)
+> assembly
 ```
 
 ### Launch the container
@@ -68,10 +73,13 @@ This will give you a bash shell in the container.
 ### Running the application
 
 ```
-# /usr/local/spark/bin/spark-submit --class "SimpleApp" /tmp/scala-2.10/simple-project_2.10-1.0.jar
+# usr/local/spark/bin/spark-submit --class "SimpleApp" /tmp/scala-2.10/ML-UIC-assembly-1.0.jar --help
 ```
+This will show you the current tasks available. As of this commit, we have --stage1 and --stage2A working.
 
-We also have the liberty to recompile our Scala program and not have to restart the container.
+We also have the liberty to recompile/rebuilt our Scala mega-.jar and not have to restart the container.
+
+Another note, `sbt package` builds a "lower case" version of our assembly "ml-uic_2.10-1.0.jar"
 
 ## Detailed Solution
 

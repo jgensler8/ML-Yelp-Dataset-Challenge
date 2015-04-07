@@ -3,22 +3,57 @@ import org.apache.spark.SparkContext
 import org.apache.spark.SparkContext._
 import org.apache.spark.SparkConf
 
+import com.databricks.spark.csv._
+
 object SimpleApp {
+
+  val businessPath = "/tmp/data/yelp_academic_dataset_business.json"
+  val businessParquetFile = "yelp_business.parquet"
+
   def main(args: Array[String]) {
-    //val logFile = "temp.txt" // Should be some file on your system
 
-    val conf = new SparkConf().setAppName("Simple Application")
-    val sc = new SparkContext(conf)
+    case class Config (
+      stage1: Boolean = false,
+      stage2A: Boolean = false,
+      stage2B: Boolean = false
+    )
 
-    sql(sc)
+    val parser = new scopt.OptionParser[Config]("scopt") {
+      head("scopt", "3.x")
+      note("You must explicitly choose which stages you want to run.\n")
+    
+      opt[Unit]("stage1") action { (_, c) =>
+        c.copy(stage1 = true) } text("Run stage1: convert Yelp JSON to parquet file")
+      opt[Unit]("stage2A") action { (_, c) =>
+        c.copy(stage2A = true) } text("Run stage2A: generate a csv of unqiue categories")
+      opt[Unit]("stage2B") action { (_, c) =>
+        c.copy(stage2B = true) } text("Run stage2B: read parquet file, filter out data, write to .csv")
+      help("help") text("show help text")
+    }
 
-    //bayes(sc)
+    // parser.parse returns Option[C]
+    parser.parse(args, Config()) match {
+      case Some(config) =>
+
+        val conf = new SparkConf().setAppName("Simple Application")
+        val sc = new SparkContext(conf)
+
+        if(config.stage1) stage1(sc)
+
+        if(config.stage2A) stage2A(sc)
+
+        if(config.stage2B) stage2B(sc)
+
+      case None =>
+        // arguments are bad, error message will have been displayed
+    }
+
   }
-
 
   //
   // this is an example of how you might use sql to analyze a dataset
   //
+  /*
   def sql(sc: SparkContext)
   {
     val sqlContext = new org.apache.spark.sql.SQLContext(sc)
@@ -41,9 +76,35 @@ object SimpleApp {
 
     println(coolPlaces.count());
   }
+  */
+
+  def stage1(sc: SparkContext)
+  {
+    val sqlContext = new org.apache.spark.sql.SQLContext(sc)
+    sqlContext
+    .jsonFile(businessPath)
+    .saveAsParquetFile(businessParquetFile)
+  }
+
+  def stage2A(sc: SparkContext)
+  {
+    //Dataframe to CSV throwing IncompatibleClassChangeError
+    val sqlContext = new org.apache.spark.sql.SQLContext(sc)
+
+    sqlContext
+    .parquetFile(businessParquetFile)
+    .select("categories")
+    .groupBy("categories")
+    .count()
+    .saveAsCsvFile("categories.csv")
+    //.save("categories.csv", "com.databricks.spark.csv")
+
+    //Instead, using a plain parquet to csv converter from Twitter
+    //TODO
+  }
 
 
-  def bayes(sc: SparkContext)
+  def stage2B(sc: SparkContext)
   {
     /*
     val reviews = sc.load("../data/yelp_academic_dataset_review.json", "json")
@@ -61,9 +122,15 @@ object SimpleApp {
     */
   }
 
+  def stage3A(sc: SparkContext)
+  {
+    //convert CSV back to parquet
+    //TODO
+  }
+
   def findcorpus(sc: SparkContext)
   {
-/*
+    /*
     val reviews = sc.load("../data/yelp_academic_dataset_review.json", "json")
 
     val reviews = sqlContext.jsonFile(path) //this ia a dataframe type
