@@ -88,19 +88,26 @@ object SimpleApp {
 
   def stage2A(sc: SparkContext)
   {
-    //Dataframe to CSV throwing IncompatibleClassChangeError
     val sqlContext = new org.apache.spark.sql.SQLContext(sc)
+
+    // for some reason, this must be declared anonymously and 
+    // not inside of the curried function below
+    // basically, our data (Parquet) is actually a sequence
+    // but we just needed to use the explode function to 
+    // "pull" that data out.
+    val explode_helper = (categories: Seq[String]) =>
+    {
+      categories
+    } : TraversableOnce[String]
 
     sqlContext
     .parquetFile(businessParquetFile)
     .select("categories")
-    .groupBy("categories")
+    .explode("categories", "category")(explode_helper)
+    .groupBy("category")
     .count()
     .saveAsCsvFile("categories.csv")
     //.save("categories.csv", "com.databricks.spark.csv")
-
-    //Instead, using a plain parquet to csv converter from Twitter
-    //TODO
   }
 
 
