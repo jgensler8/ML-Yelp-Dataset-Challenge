@@ -3,6 +3,9 @@ import org.apache.spark.SparkContext
 import org.apache.spark.SparkContext._
 import org.apache.spark.SparkConf
 
+import org.apache.spark.sql._
+import org.apache.spark.sql.catalyst.expressions._
+
 import com.databricks.spark.csv._
 
 object SimpleApp {
@@ -106,6 +109,8 @@ object SimpleApp {
     .explode("categories", "category")(explode_helper)
     .groupBy("category")
     .count()
+    .sort( new Column("count").desc ) //I couldn't figure out the $ syntax, might be macro
+    .limit(20)
     .saveAsCsvFile("categories.csv")
     //.save("categories.csv", "com.databricks.spark.csv")
   }
