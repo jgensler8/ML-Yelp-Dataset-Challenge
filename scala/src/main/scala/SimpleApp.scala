@@ -5,20 +5,55 @@ import org.apache.spark.SparkConf
 
 import org.apache.spark.sql._
 import org.apache.spark.sql.catalyst.expressions._
+import org.apache.spark.mllib.clustering.{LDA}
+
+//import org.apache.spark.mllib.feature.{HashingTF}
+import org.apache.spark.ml.Pipeline
+import org.apache.spark.ml.classification.LogisticRegression
+import org.apache.spark.ml.feature.{HashingTF,Tokenizer}
+import org.apache.spark.mllib.linalg.{SparseVector,DenseVector,Vector}
+
+import org.apache.log4j.Logger
+import org.apache.log4j.Level
 
 import com.databricks.spark.csv._
+
+
+import org.apache.spark.sql.Row
+import scala.beans.BeanInfo
+
+@BeanInfo
+case class LabeledDocument(id: Long, text: String, label: Double)
+
+@BeanInfo
+case class Document(id: Long, text: String)
 
 object SimpleApp {
 
   val businessPath = "/tmp/data/yelp_academic_dataset_business.json"
+  val reviewPath = "/tmp/data/yelp_academic_dataset_review.json"
   val businessParquetFile = "yelp_business.parquet"
+  val reviewParquetFile = "yelp_review.parquet"
+  val userPath = "/tmp/data/yelp_academic_dataset_user.json"
+  val userParquetFile = "yelp_user.parquet"
+  val serviceCsvFile = "/tmp/service_db_noquote.csv"
+
+  // This is category to isolate for stage2B
+  val category = "Mexican"
 
   def main(args: Array[String]) {
+
+    Logger.getLogger("org").setLevel(Level.WARN);
+    Logger.getLogger("akka").setLevel(Level.OFF);
+    Logger.getLogger("parquet").setLevel(Level.OFF);
 
     case class Config (
       stage1: Boolean = false,
       stage2A: Boolean = false,
-      stage2B: Boolean = false
+      stage2B: Boolean = false,
+      stage4: Boolean = false,
+      stage6A: Boolean = false,
+      stage6B: Boolean = false
     )
 
     val parser = new scopt.OptionParser[Config]("scopt") {
@@ -31,6 +66,16 @@ object SimpleApp {
         c.copy(stage2A = true) } text("Run stage2A: generate a csv of unqiue categories")
       opt[Unit]("stage2B") action { (_, c) =>
         c.copy(stage2B = true) } text("Run stage2B: read parquet file, filter out data, write to .csv")
+      
+      opt[Unit]("stage4") action { (_, c) =>
+        c.copy(stage4 = true) } text("Run stage4: read parquet file, filter out data, write to .csv")
+      
+      opt[Unit]("stage6A") action { (_, c) =>
+        c.copy(stage6A = true) } text("Run stage6A: launch LDA pipeline on reviews")
+
+      opt[Unit]("stage6B") action { (_, c) =>
+        c.copy(stage6B = true) } text("Run stage6B: launch LDA pipeline on service.csv")
+
       help("help") text("show help text")
     }
 
@@ -46,6 +91,12 @@ object SimpleApp {
         if(config.stage2A) stage2A(sc)
 
         if(config.stage2B) stage2B(sc)
+
+        if(config.stage4) stage4(sc)
+
+        if(config.stage6A) stage6A(sc)
+
+        if(config.stage6B) stage6B(sc)
 
       case None =>
         // arguments are bad, error message will have been displayed
@@ -87,6 +138,14 @@ object SimpleApp {
     sqlContext
     .jsonFile(businessPath)
     .saveAsParquetFile(businessParquetFile)
+
+    sqlContext
+    .jsonFile(reviewPath)
+    .saveAsParquetFile(reviewParquetFile)
+
+    sqlContext
+    .jsonFile(userPath)
+    .saveAsParquetFile(userParquetFile)
   }
 
   def stage2A(sc: SparkContext)
@@ -115,23 +174,30 @@ object SimpleApp {
     //.save("categories.csv", "com.databricks.spark.csv")
   }
 
-
   def stage2B(sc: SparkContext)
   {
-    /*
-    val reviews = sc.load("../data/yelp_academic_dataset_review.json", "json")
+    val sqlContext = new org.apache.spark.sql.SQLContext(sc)
 
-    val reviews = sqlContext.jsonFile(path) //this ia a dataframe type
+    // for some reason, this must be declared anonymously and 
+    // not inside of the curried function below
+    // basically, our data (Parquet) is actually a sequence
+    // but we just needed to use the explode function to 
+    // "pull" that data out.
+    val explode_helper = (categories: Seq[String]) =>
+    {
+      categories
+    } : TraversableOnce[String]
 
-    //now we want to build a vector of features
-
-    //we have to quantify all fields
-
-    //here i will choose number of cool likes and I will choose 
-
-    reviews.map( line => print(line) );
-
-    */
+    val businesses = sqlContext
+    .parquetFile(businessParquetFile)
+    .select("categories")
+    .explode("categories", "category")(explode_helper)
+    .groupBy("category")
+    .count()
+    .sort( new Column("count").desc ) //I couldn't figure out the $ syntax, might be macro
+    .limit(200)
+    .saveAsCsvFile("categories.csv")
+    //.save("categories.csv", "com.databricks.spark.csv")
   }
 
   def stage3A(sc: SparkContext)
@@ -140,20 +206,228 @@ object SimpleApp {
     //TODO
   }
 
-  def findcorpus(sc: SparkContext)
+  // 172
+  // fast food, airizona, > 20 reviews
+  // businessID
+  // delete newline (13 in ascii)
+  // carraige return (10 in ascii)
+  // --> spaces
+  // , (comma) --> semicolon ()
+
+  // nmf
+
+  // users: userid, elite
+
+  // reviews: text, rating, business_id, user_id
+
+  def stage4(sc: SparkContext)
   {
-    /*
-    val reviews = sc.load("../data/yelp_academic_dataset_review.json", "json")
+    val sqlContext = new org.apache.spark.sql.SQLContext(sc)
 
-    val reviews = sqlContext.jsonFile(path) //this ia a dataframe type
+    // for some reason, this must be declared anonymously and 
+    // not inside of the curried function below
+    // basically, our data (Parquet) is actually a sequence
+    // but we just needed to use the explode function to 
+    // "pull" that data out.
+    val explode_helper = (categories: Seq[String]) =>
+    {
+      categories
+    } : TraversableOnce[String]
 
-    // Register this DataFrame as a table.
-    reviews.registerTempTable("reviews")
+    val users = sqlContext
+    .parquetFile(userParquetFile)
+    .select("user_id", "elite")
 
-    // SQL statements can be run by using the sql methods provided by sqlContext.
-    val coolPlaces = sqlContext.sql("SELECT business_id FROM reviews WHERE votes.cool > 10")
+    val reviews = sqlContext
+    .parquetFile(reviewParquetFile)
+    .select("business_id", "user_id", "stars", "text")
 
-    println(coolPlaces.count());
-    */
+    // .join(reviews)
+
+    val businesses = sqlContext
+    .parquetFile(businessParquetFile)
+    .select("name", "categories", "review_count", "state", "business_id")
+    .where( new Column("state").equalTo("AZ") )
+    .explode("categories", "category")(explode_helper)
+    .where( new Column("category").contains("Fast Food") )
+    .where( new Column("review_count").gt(20) )
+    .sort("name")
+    .join(users)
+    .join(reviews)
+    .saveAsCsvFile("businesses.csv")
+    //.save("categories.csv", "com.databricks.spark.csv")
   }
+
+
+  def stage6A(sc: SparkContext)
+  {
+
+    val sqlContext = new org.apache.spark.sql.SQLContext(sc)
+
+    case class WordVec(
+      reviewID: scala.Long,
+      features: org.apache.spark.mllib.linalg.Vector)
+
+    val explode_helper = (text: Seq[String]) =>
+    {
+      text
+    } : TraversableOnce[String]
+
+    val reviews = sqlContext
+    .parquetFile(reviewParquetFile)
+    .limit(100)
+
+    val tokenizer = new Tokenizer()
+      .setInputCol("text")
+      .setOutputCol("words")
+
+    val hashingTF = new HashingTF()
+      .setNumFeatures(1000)
+      .setInputCol(tokenizer.getOutputCol)
+      .setOutputCol("features")
+
+    val pipe1 = tokenizer
+      .transform(reviews)
+    val pipe2 = hashingTF
+      .transform(pipe1)
+
+    pipe2.show()
+
+    pipe2.printSchema()
+
+    val char_helper = (c : Char) =>
+    {
+      c.toDouble
+    }
+
+    val map_helper = (row : Row ) =>
+    {
+      val id = (new scala.util.Random()).nextLong()
+
+      //THIS DOES NOT WORK!!!!
+      val vec = (row(1) match {
+        case Some(x:Vector) =>
+          x
+        case _ => 
+          new SparseVector(1000, new Array[Int](1000), new Array[Double](1000))
+      })
+
+      //println(row(1).toString.toArray)
+      //val vec = new DenseVector(row(1).toArray.map(char_helper))
+      
+      (id, vec)
+    } : (scala.Long, org.apache.spark.mllib.linalg.Vector)
+
+    val documents =
+    pipe2
+      .select("review_id", "features")
+      .map( map_helper )
+
+    pipe2
+    .show()
+
+    val ldaModel = new LDA()
+      .setK(100)
+      .run(documents)
+
+    println("Learned topics (as distributions over vocab of " + ldaModel.vocabSize + " words):")
+    val topics = ldaModel.topicsMatrix
+    for (topic <- Range(0, 10)) {
+      print("Topic " + topic + ":")
+      for (word <- Range(0, 5)) { print(" " + topics(word, topic)); }
+      println()
+    }
+    
+  }
+
+
+  def stage6B(sc: SparkContext)
+  {
+    val sqlContext = new org.apache.spark.sql.SQLContext(sc)
+
+    import sqlContext.implicits._
+
+    val map_helper = (row : Row ) =>
+    {
+      val review = row(1).toString
+
+      val label = (row(2) match {
+        case "1" => 1D
+        case "0" => 0D
+        case _ => 0D
+      })
+
+      LabeledDocument(0L,review,label)
+    } : LabeledDocument
+
+    val servicecsv = sqlContext
+      .csvFile(serviceCsvFile)
+      .map(map_helper)
+      .toDF()
+
+    //these might overlap
+    val training = servicecsv
+      .sample(false, .8)
+    val testing = servicecsv
+      .sample(false, .2)
+
+    val trainingCount = training.count()
+    val testingCount = testing.count()
+    val servicecsvCount = servicecsv.count()
+
+
+    val tokenizer = new Tokenizer()
+      .setInputCol("text")
+      .setOutputCol("words")
+
+    val hashingTF = new HashingTF()
+      .setNumFeatures(1000)
+      .setInputCol(tokenizer.getOutputCol)
+      .setOutputCol("features")
+
+    val lr = new LogisticRegression()
+      .setMaxIter(5000)
+      .setRegParam(0.01)
+      .setFeaturesCol(hashingTF.getOutputCol)
+      .setLabelCol("label")
+    val pipeline = new Pipeline()
+      .setStages(Array(tokenizer, hashingTF, lr))
+    
+    val model = pipeline.fit(training)
+
+    //val weights = lr.weights
+
+    //println(hashingTF.explainParams)
+    //println(weights)
+
+    val results = model.transform(testing)
+
+    //results
+    //  .show()
+
+    val map_checker = (row: Row) => {
+      (row(2) == row(7) match {
+        case true => 1
+        case false => 0
+      })
+    } : Int
+
+    val right_wrong = results
+      .map(map_checker)
+
+    val sum = 
+      right_wrong
+      .sum()
+
+    val count =
+      right_wrong
+      .count()
+
+    val accuracy = sum/count;
+
+    println(s"count = $count, accuracy = $accuracy")
+    println(s"testingCount = $testingCount, trainingCount = $trainingCount, servicecsvCount = $servicecsvCount")
+
+  }
+
 }

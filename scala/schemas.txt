@@ -1,0 +1,62 @@
+root
+ |-- business_id: string (nullable = true)
+ |-- date: string (nullable = true)
+ |-- review_id: string (nullable = true)
+ |-- stars: long (nullable = true)
+ |-- text: string (nullable = true)
+ |-- type: string (nullable = true)
+ |-- user_id: string (nullable = true)
+ |-- votes: struct (nullable = true)
+ |    |-- cool: long (nullable = true)
+ |    |-- funny: long (nullable = true)
+ |    |-- useful: long (nullable = true)
+
+ after using tokenizer and hashing tf:
+ root
+ |-- business_id: string (nullable = true)
+ |-- date: string (nullable = true)
+ |-- review_id: string (nullable = true)
+ |-- stars: long (nullable = true)
+ |-- text: string (nullable = true)
+ |-- type: string (nullable = true)
+ |-- user_id: string (nullable = true)
+ |-- votes: struct (nullable = true)
+ |    |-- cool: long (nullable = true)
+ |    |-- funny: long (nullable = true)
+ |    |-- useful: long (nullable = true)
+ |-- words: array (nullable = true)
+ |    |-- element: string (containsNull = false)
+ |-- features: vecto (nullable = true)
+
+ features is the feature vector using bag of words
+
+
+//their data types
+ root
+ |-- id: long (nullable = false)
+ |-- text: string (nullable = true)
+ |-- label: double (nullable = false)
+
+root
+ |-- id: long (nullable = false)
+ |-- text: string (nullable = true)
+
+//vs 
+
+//csv data types!
+root
+ |-- Restuarant: string (nullable = true)
+ |-- review: string (nullable = true)
+ |-- label: string (nullable = true)
+
+root
+ |-- review: string (nullable = true)
+
+count = 793, accuracy = 0.8827238335435057                                      
+testingCount = 793, trainingCount = 3286, servicecsvCount = 4103
+
+count = 823, accuracy = 0.8554070473876063                                      
+testingCount = 823, trainingCount = 3316, servicecsvCount = 4103
+
+count = 813, accuracy = 0.8327183271832719                                      
+testingCount = 813, trainingCount = 3343, servicecsvCount = 4103

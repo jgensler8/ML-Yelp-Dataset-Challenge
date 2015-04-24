@@ -25,7 +25,7 @@ docker run -t -i \
  bash
 
 # 
-# /usr/local/spark/bin/spark-submit --class "SimpleApp" /tmp/scala-2.10/ML-UIC-assembly-1.0.jar#
+# /usr/local/spark/bin/spark-submit --class "SimpleApp" /tmp/scala-2.10/ML-UIC-assembly-1.0.jar
 #
 #
 # Use the above line to run the scala program. You could either
