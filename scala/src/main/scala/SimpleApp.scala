@@ -18,6 +18,7 @@ import org.apache.log4j.Level
 
 import com.databricks.spark.csv._
 
+import scala.reflect.runtime.{universe=>ru}
 
 import org.apache.spark.sql.Row
 import scala.beans.BeanInfo
@@ -66,15 +67,12 @@ object SimpleApp {
         c.copy(stage2A = true) } text("Run stage2A: generate a csv of unqiue categories")
       opt[Unit]("stage2B") action { (_, c) =>
         c.copy(stage2B = true) } text("Run stage2B: read parquet file, filter out data, write to .csv")
-      
       opt[Unit]("stage4") action { (_, c) =>
         c.copy(stage4 = true) } text("Run stage4: read parquet file, filter out data, write to .csv")
-      
       opt[Unit]("stage6A") action { (_, c) =>
         c.copy(stage6A = true) } text("Run stage6A: launch LDA pipeline on reviews")
-
       opt[Unit]("stage6B") action { (_, c) =>
-        c.copy(stage6B = true) } text("Run stage6B: launch LDA pipeline on service.csv")
+        c.copy(stage6B = true) } text("Run stage6B: launch Logistic Regression pipeline on service.csv")
 
       help("help") text("show help text")
     }
@@ -275,14 +273,14 @@ object SimpleApp {
 
     val reviews = sqlContext
     .parquetFile(reviewParquetFile)
-    .limit(100)
+    .limit(2000)
 
     val tokenizer = new Tokenizer()
       .setInputCol("text")
       .setOutputCol("words")
 
     val hashingTF = new HashingTF()
-      .setNumFeatures(1000)
+      .setNumFeatures(10000)
       .setInputCol(tokenizer.getOutputCol)
       .setOutputCol("features")
 
@@ -291,40 +289,19 @@ object SimpleApp {
     val pipe2 = hashingTF
       .transform(pipe1)
 
-    pipe2.show()
-
-    pipe2.printSchema()
-
-    val char_helper = (c : Char) =>
-    {
-      c.toDouble
-    }
-
     val map_helper = (row : Row ) =>
     {
-      val id = (new scala.util.Random()).nextLong()
-
-      //THIS DOES NOT WORK!!!!
-      val vec = (row(1) match {
-        case Some(x:Vector) =>
-          x
-        case _ => 
-          new SparseVector(1000, new Array[Int](1000), new Array[Double](1000))
-      })
-
-      //println(row(1).toString.toArray)
-      //val vec = new DenseVector(row(1).toArray.map(char_helper))
-      
-      (id, vec)
-    } : (scala.Long, org.apache.spark.mllib.linalg.Vector)
+      val sv = row(1).asInstanceOf[SparseVector]
+      //val dv = new DenseVector(sv.toArray)
+      sv
+    } : (Vector)
 
     val documents =
     pipe2
       .select("review_id", "features")
       .map( map_helper )
-
-    pipe2
-    .show()
+      .zipWithIndex.map(_.swap)
+      .cache()
 
     val ldaModel = new LDA()
       .setK(100)
@@ -337,7 +314,7 @@ object SimpleApp {
       for (word <- Range(0, 5)) { print(" " + topics(word, topic)); }
       println()
     }
-    
+   
   }
 
 
@@ -363,25 +340,26 @@ object SimpleApp {
     val servicecsv = sqlContext
       .csvFile(serviceCsvFile)
       .map(map_helper)
-      .toDF()
+
+    val split = servicecsv.randomSplit(Array(.8,.2))
 
     //these might overlap
-    val training = servicecsv
-      .sample(false, .8)
-    val testing = servicecsv
-      .sample(false, .2)
+    val training = split(0)
+      .toDF()
+
+    val testing = split(1)
+      .toDF()
 
     val trainingCount = training.count()
     val testingCount = testing.count()
     val servicecsvCount = servicecsv.count()
-
 
     val tokenizer = new Tokenizer()
       .setInputCol("text")
       .setOutputCol("words")
 
     val hashingTF = new HashingTF()
-      .setNumFeatures(1000)
+      .setNumFeatures(5000)
       .setInputCol(tokenizer.getOutputCol)
       .setOutputCol("features")
 
@@ -394,16 +372,11 @@ object SimpleApp {
       .setStages(Array(tokenizer, hashingTF, lr))
     
     val model = pipeline.fit(training)
-
-    //val weights = lr.weights
-
-    //println(hashingTF.explainParams)
-    //println(weights)
-
     val results = model.transform(testing)
 
-    //results
-    //  .show()
+    results
+    .select("id","text","label","prediction")
+    .saveAsCsvFile("predictions.csv")
 
     val map_checker = (row: Row) => {
       (row(2) == row(7) match {
@@ -412,17 +385,9 @@ object SimpleApp {
       })
     } : Int
 
-    val right_wrong = results
-      .map(map_checker)
-
-    val sum = 
-      right_wrong
-      .sum()
-
-    val count =
-      right_wrong
-      .count()
-
+    val right_wrong = results.map(map_checker)
+    val sum      = right_wrong.sum()
+    val count    = right_wrong.count()
     val accuracy = sum/count;
 
     println(s"count = $count, accuracy = $accuracy")
