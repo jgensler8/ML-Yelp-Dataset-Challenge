@@ -19,7 +19,7 @@ name hashing:
 1 items
 0 -> true
 products:
-32 items
+33 items
 /home/user/yelp/scala/src/main/scala/SimpleApp.scala -> /home/user/yelp/scala/target/scala-2.10/classes/Document$.class
 /home/user/yelp/scala/src/main/scala/SimpleApp.scala -> /home/user/yelp/scala/target/scala-2.10/classes/Document.class
 /home/user/yelp/scala/src/main/scala/SimpleApp.scala -> /home/user/yelp/scala/target/scala-2.10/classes/LabeledDocument$.class
@@ -30,13 +30,14 @@ products:
 /home/user/yelp/scala/src/main/scala/SimpleApp.scala -> /home/user/yelp/scala/target/scala-2.10/classes/SimpleApp$$anon$1$$anonfun$4.class
 /home/user/yelp/scala/src/main/scala/SimpleApp.scala -> /home/user/yelp/scala/target/scala-2.10/classes/SimpleApp$$anon$1$$anonfun$5.class
 /home/user/yelp/scala/src/main/scala/SimpleApp.scala -> /home/user/yelp/scala/target/scala-2.10/classes/SimpleApp$$anon$1$$anonfun$6.class
+/home/user/yelp/scala/src/main/scala/SimpleApp.scala -> /home/user/yelp/scala/target/scala-2.10/classes/SimpleApp$$anon$1$$anonfun$7.class
 /home/user/yelp/scala/src/main/scala/SimpleApp.scala -> /home/user/yelp/scala/target/scala-2.10/classes/SimpleApp$$anon$1.class
 /home/user/yelp/scala/src/main/scala/SimpleApp.scala -> /home/user/yelp/scala/target/scala-2.10/classes/SimpleApp$$anonfun$10.class
 /home/user/yelp/scala/src/main/scala/SimpleApp.scala -> /home/user/yelp/scala/target/scala-2.10/classes/SimpleApp$$anonfun$11.class
 /home/user/yelp/scala/src/main/scala/SimpleApp.scala -> /home/user/yelp/scala/target/scala-2.10/classes/SimpleApp$$anonfun$12.class
 /home/user/yelp/scala/src/main/scala/SimpleApp.scala -> /home/user/yelp/scala/target/scala-2.10/classes/SimpleApp$$anonfun$13.class
 /home/user/yelp/scala/src/main/scala/SimpleApp.scala -> /home/user/yelp/scala/target/scala-2.10/classes/SimpleApp$$anonfun$14.class
-/home/user/yelp/scala/src/main/scala/SimpleApp.scala -> /home/user/yelp/scala/target/scala-2.10/classes/SimpleApp$$anonfun$7.class
+/home/user/yelp/scala/src/main/scala/SimpleApp.scala -> /home/user/yelp/scala/target/scala-2.10/classes/SimpleApp$$anonfun$15.class
 /home/user/yelp/scala/src/main/scala/SimpleApp.scala -> /home/user/yelp/scala/target/scala-2.10/classes/SimpleApp$$anonfun$8.class
 /home/user/yelp/scala/src/main/scala/SimpleApp.scala -> /home/user/yelp/scala/target/scala-2.10/classes/SimpleApp$$anonfun$9.class
 /home/user/yelp/scala/src/main/scala/SimpleApp.scala -> /home/user/yelp/scala/target/scala-2.10/classes/SimpleApp$$anonfun$stage6A$1$$anonfun$apply$mcVI$sp$1.class
@@ -81,7 +82,7 @@ inheritance internal dependencies:
 inheritance external dependencies:
 0 items
 class names:
-32 items
+33 items
 /home/user/yelp/scala/src/main/scala/SimpleApp.scala -> Document
 /home/user/yelp/scala/src/main/scala/SimpleApp.scala -> Document$
 /home/user/yelp/scala/src/main/scala/SimpleApp.scala -> LabeledDocument
@@ -95,12 +96,13 @@ class names:
 /home/user/yelp/scala/src/main/scala/SimpleApp.scala -> SimpleApp$$anon$1$$anonfun$4
 /home/user/yelp/scala/src/main/scala/SimpleApp.scala -> SimpleApp$$anon$1$$anonfun$5
 /home/user/yelp/scala/src/main/scala/SimpleApp.scala -> SimpleApp$$anon$1$$anonfun$6
+/home/user/yelp/scala/src/main/scala/SimpleApp.scala -> SimpleApp$$anon$1$$anonfun$7
 /home/user/yelp/scala/src/main/scala/SimpleApp.scala -> SimpleApp$$anonfun$10
 /home/user/yelp/scala/src/main/scala/SimpleApp.scala -> SimpleApp$$anonfun$11
 /home/user/yelp/scala/src/main/scala/SimpleApp.scala -> SimpleApp$$anonfun$12
 /home/user/yelp/scala/src/main/scala/SimpleApp.scala -> SimpleApp$$anonfun$13
 /home/user/yelp/scala/src/main/scala/SimpleApp.scala -> SimpleApp$$anonfun$14
-/home/user/yelp/scala/src/main/scala/SimpleApp.scala -> SimpleApp$$anonfun$7
+/home/user/yelp/scala/src/main/scala/SimpleApp.scala -> SimpleApp$$anonfun$15
 /home/user/yelp/scala/src/main/scala/SimpleApp.scala -> SimpleApp$$anonfun$8
 /home/user/yelp/scala/src/main/scala/SimpleApp.scala -> SimpleApp$$anonfun$9
 /home/user/yelp/scala/src/main/scala/SimpleApp.scala -> SimpleApp$$anonfun$stage6A$1
@@ -115,7 +117,7 @@ class names:
 /home/user/yelp/scala/src/main/scala/SimpleApp.scala -> SimpleApp$WordVec$3
 /home/user/yelp/scala/src/main/scala/SimpleApp.scala -> SimpleApp$WordVec$4$
 used names:
-298 items
+343 items
 /home/user/yelp/scala/src/main/scala/SimpleApp.scala -> $anon
 /home/user/yelp/scala/src/main/scala/SimpleApp.scala -> $m
 /home/user/yelp/scala/src/main/scala/SimpleApp.scala -> $m$untyped
@@ -127,12 +129,14 @@ used names:
 /home/user/yelp/scala/src/main/scala/SimpleApp.scala -> $u
 /home/user/yelp/scala/src/main/scala/SimpleApp.scala -> &&
 /home/user/yelp/scala/src/main/scala/SimpleApp.scala -> +
+/home/user/yelp/scala/src/main/scala/SimpleApp.scala -> ->
 /home/user/yelp/scala/src/main/scala/SimpleApp.scala -> /
 /home/user/yelp/scala/src/main/scala/SimpleApp.scala -> <init>
 /home/user/yelp/scala/src/main/scala/SimpleApp.scala -> ==
+/home/user/yelp/scala/src/main/scala/SimpleApp.scala -> ===
 /home/user/yelp/scala/src/main/scala/SimpleApp.scala -> AbstractFunction2
-/home/user/yelp/scala/src/main/scala/SimpleApp.scala -> AbstractFunction3
-/home/user/yelp/scala/src/main/scala/SimpleApp.scala -> AbstractFunction6
+/home/user/yelp/scala/src/main/scala/SimpleApp.scala -> AbstractFunction4
+/home/user/yelp/scala/src/main/scala/SimpleApp.scala -> AbstractFunction7
 /home/user/yelp/scala/src/main/scala/SimpleApp.scala -> AnyRef
 /home/user/yelp/scala/src/main/scala/SimpleApp.scala -> Array
 /home/user/yelp/scala/src/main/scala/SimpleApp.scala -> BeanInfo
@@ -152,6 +156,7 @@ used names:
 /home/user/yelp/scala/src/main/scala/SimpleApp.scala -> Logger
 /home/user/yelp/scala/src/main/scala/SimpleApp.scala -> LogisticRegression
 /home/user/yelp/scala/src/main/scala/SimpleApp.scala -> Long
+/home/user/yelp/scala/src/main/scala/SimpleApp.scala -> Map
 /home/user/yelp/scala/src/main/scala/SimpleApp.scala -> Mirror
 /home/user/yelp/scala/src/main/scala/SimpleApp.scala -> Nil
 /home/user/yelp/scala/src/main/scala/SimpleApp.scala -> None
@@ -195,6 +200,8 @@ used names:
 /home/user/yelp/scala/src/main/scala/SimpleApp.scala -> _toString
 /home/user/yelp/scala/src/main/scala/SimpleApp.scala -> accuracy
 /home/user/yelp/scala/src/main/scala/SimpleApp.scala -> action
+/home/user/yelp/scala/src/main/scala/SimpleApp.scala -> agg
+/home/user/yelp/scala/src/main/scala/SimpleApp.scala -> any2ArrowAssoc
 /home/user/yelp/scala/src/main/scala/SimpleApp.scala -> anyHash
 /home/user/yelp/scala/src/main/scala/SimpleApp.scala -> apache
 /home/user/yelp/scala/src/main/scala/SimpleApp.scala -> apply
@@ -202,10 +209,14 @@ used names:
 /home/user/yelp/scala/src/main/scala/SimpleApp.scala -> asInstanceOf
 /home/user/yelp/scala/src/main/scala/SimpleApp.scala -> asModule
 /home/user/yelp/scala/src/main/scala/SimpleApp.scala -> asType
+/home/user/yelp/scala/src/main/scala/SimpleApp.scala -> b_id
 /home/user/yelp/scala/src/main/scala/SimpleApp.scala -> beans
 /home/user/yelp/scala/src/main/scala/SimpleApp.scala -> build
 /home/user/yelp/scala/src/main/scala/SimpleApp.scala -> businessParquetFile
 /home/user/yelp/scala/src/main/scala/SimpleApp.scala -> businessPath
+/home/user/yelp/scala/src/main/scala/SimpleApp.scala -> businessRatings
+/home/user/yelp/scala/src/main/scala/SimpleApp.scala -> businessRatingsCsvFile
+/home/user/yelp/scala/src/main/scala/SimpleApp.scala -> businessWeightedService
 /home/user/yelp/scala/src/main/scala/SimpleApp.scala -> c
 /home/user/yelp/scala/src/main/scala/SimpleApp.scala -> cache
 /home/user/yelp/scala/src/main/scala/SimpleApp.scala -> catalyst
@@ -278,17 +289,24 @@ used names:
 /home/user/yelp/scala/src/main/scala/SimpleApp.scala -> pipe1
 /home/user/yelp/scala/src/main/scala/SimpleApp.scala -> pipe2
 /home/user/yelp/scala/src/main/scala/SimpleApp.scala -> pipeline
+/home/user/yelp/scala/src/main/scala/SimpleApp.scala -> predictionCsvFile
+/home/user/yelp/scala/src/main/scala/SimpleApp.scala -> predictions
 /home/user/yelp/scala/src/main/scala/SimpleApp.scala -> print
+/home/user/yelp/scala/src/main/scala/SimpleApp.scala -> printSchema
 /home/user/yelp/scala/src/main/scala/SimpleApp.scala -> println
 /home/user/yelp/scala/src/main/scala/SimpleApp.scala -> qual$1
 /home/user/yelp/scala/src/main/scala/SimpleApp.scala -> qual$2
 /home/user/yelp/scala/src/main/scala/SimpleApp.scala -> qual$3
 /home/user/yelp/scala/src/main/scala/SimpleApp.scala -> qual$4
 /home/user/yelp/scala/src/main/scala/SimpleApp.scala -> qual$5
+/home/user/yelp/scala/src/main/scala/SimpleApp.scala -> qual$6
+/home/user/yelp/scala/src/main/scala/SimpleApp.scala -> qual$7
+/home/user/yelp/scala/src/main/scala/SimpleApp.scala -> qual$8
 /home/user/yelp/scala/src/main/scala/SimpleApp.scala -> randomSplit
 /home/user/yelp/scala/src/main/scala/SimpleApp.scala -> rdd
 /home/user/yelp/scala/src/main/scala/SimpleApp.scala -> rddToDataFrameHolder
 /home/user/yelp/scala/src/main/scala/SimpleApp.scala -> reflect
+/home/user/yelp/scala/src/main/scala/SimpleApp.scala -> repartition
 /home/user/yelp/scala/src/main/scala/SimpleApp.scala -> results
 /home/user/yelp/scala/src/main/scala/SimpleApp.scala -> review
 /home/user/yelp/scala/src/main/scala/SimpleApp.scala -> reviewID
@@ -323,6 +341,7 @@ used names:
 /home/user/yelp/scala/src/main/scala/SimpleApp.scala -> setOutputCol
 /home/user/yelp/scala/src/main/scala/SimpleApp.scala -> setRegParam
 /home/user/yelp/scala/src/main/scala/SimpleApp.scala -> setStages
+/home/user/yelp/scala/src/main/scala/SimpleApp.scala -> show
 /home/user/yelp/scala/src/main/scala/SimpleApp.scala -> sort
 /home/user/yelp/scala/src/main/scala/SimpleApp.scala -> spark
 /home/user/yelp/scala/src/main/scala/SimpleApp.scala -> split
@@ -334,6 +353,7 @@ used names:
 /home/user/yelp/scala/src/main/scala/SimpleApp.scala -> stage4
 /home/user/yelp/scala/src/main/scala/SimpleApp.scala -> stage6A
 /home/user/yelp/scala/src/main/scala/SimpleApp.scala -> stage6B
+/home/user/yelp/scala/src/main/scala/SimpleApp.scala -> stage7
 /home/user/yelp/scala/src/main/scala/SimpleApp.scala -> staticClass
 /home/user/yelp/scala/src/main/scala/SimpleApp.scala -> staticModule
 /home/user/yelp/scala/src/main/scala/SimpleApp.scala -> staticPackage
@@ -410,47 +430,75 @@ used names:
 /home/user/yelp/scala/src/main/scala/SimpleApp.scala -> x$53
 /home/user/yelp/scala/src/main/scala/SimpleApp.scala -> x$54
 /home/user/yelp/scala/src/main/scala/SimpleApp.scala -> x$55
-/home/user/yelp/scala/src/main/scala/SimpleApp.scala -> x$8
+/home/user/yelp/scala/src/main/scala/SimpleApp.scala -> x$56
+/home/user/yelp/scala/src/main/scala/SimpleApp.scala -> x$57
+/home/user/yelp/scala/src/main/scala/SimpleApp.scala -> x$58
+/home/user/yelp/scala/src/main/scala/SimpleApp.scala -> x$59
+/home/user/yelp/scala/src/main/scala/SimpleApp.scala -> x$60
+/home/user/yelp/scala/src/main/scala/SimpleApp.scala -> x$61
+/home/user/yelp/scala/src/main/scala/SimpleApp.scala -> x$62
+/home/user/yelp/scala/src/main/scala/SimpleApp.scala -> x$63
+/home/user/yelp/scala/src/main/scala/SimpleApp.scala -> x$64
+/home/user/yelp/scala/src/main/scala/SimpleApp.scala -> x$65
+/home/user/yelp/scala/src/main/scala/SimpleApp.scala -> x$66
+/home/user/yelp/scala/src/main/scala/SimpleApp.scala -> x$67
+/home/user/yelp/scala/src/main/scala/SimpleApp.scala -> x$68
+/home/user/yelp/scala/src/main/scala/SimpleApp.scala -> x$69
+/home/user/yelp/scala/src/main/scala/SimpleApp.scala -> x$70
+/home/user/yelp/scala/src/main/scala/SimpleApp.scala -> x$71
+/home/user/yelp/scala/src/main/scala/SimpleApp.scala -> x$72
+/home/user/yelp/scala/src/main/scala/SimpleApp.scala -> x$73
+/home/user/yelp/scala/src/main/scala/SimpleApp.scala -> x$74
+/home/user/yelp/scala/src/main/scala/SimpleApp.scala -> x$75
+/home/user/yelp/scala/src/main/scala/SimpleApp.scala -> x$76
+/home/user/yelp/scala/src/main/scala/SimpleApp.scala -> x$77
+/home/user/yelp/scala/src/main/scala/SimpleApp.scala -> x$78
+/home/user/yelp/scala/src/main/scala/SimpleApp.scala -> x$79
+/home/user/yelp/scala/src/main/scala/SimpleApp.scala -> x$80
+/home/user/yelp/scala/src/main/scala/SimpleApp.scala -> x$81
+/home/user/yelp/scala/src/main/scala/SimpleApp.scala -> x$82
+/home/user/yelp/scala/src/main/scala/SimpleApp.scala -> x$83
 /home/user/yelp/scala/src/main/scala/SimpleApp.scala -> x$9
 /home/user/yelp/scala/src/main/scala/SimpleApp.scala -> zipWithIndex
 /home/user/yelp/scala/src/main/scala/SimpleApp.scala -> ||
 product stamps:
-32 items
-/home/user/yelp/scala/target/scala-2.10/classes/Document$.class -> lastModified(1429998599000)
-/home/user/yelp/scala/target/scala-2.10/classes/Document.class -> lastModified(1429998599000)
-/home/user/yelp/scala/target/scala-2.10/classes/LabeledDocument$.class -> lastModified(1429998599000)
-/home/user/yelp/scala/target/scala-2.10/classes/LabeledDocument.class -> lastModified(1429998599000)
-/home/user/yelp/scala/target/scala-2.10/classes/SimpleApp$$anon$1$$anonfun$1.class -> lastModified(1429998599000)
-/home/user/yelp/scala/target/scala-2.10/classes/SimpleApp$$anon$1$$anonfun$2.class -> lastModified(1429998599000)
-/home/user/yelp/scala/target/scala-2.10/classes/SimpleApp$$anon$1$$anonfun$3.class -> lastModified(1429998599000)
-/home/user/yelp/scala/target/scala-2.10/classes/SimpleApp$$anon$1$$anonfun$4.class -> lastModified(1429998599000)
-/home/user/yelp/scala/target/scala-2.10/classes/SimpleApp$$anon$1$$anonfun$5.class -> lastModified(1429998599000)
-/home/user/yelp/scala/target/scala-2.10/classes/SimpleApp$$anon$1$$anonfun$6.class -> lastModified(1429998599000)
-/home/user/yelp/scala/target/scala-2.10/classes/SimpleApp$$anon$1.class -> lastModified(1429998599000)
-/home/user/yelp/scala/target/scala-2.10/classes/SimpleApp$$anonfun$10.class -> lastModified(1429998599000)
-/home/user/yelp/scala/target/scala-2.10/classes/SimpleApp$$anonfun$11.class -> lastModified(1429998599000)
-/home/user/yelp/scala/target/scala-2.10/classes/SimpleApp$$anonfun$12.class -> lastModified(1429998599000)
-/home/user/yelp/scala/target/scala-2.10/classes/SimpleApp$$anonfun$13.class -> lastModified(1429998599000)
-/home/user/yelp/scala/target/scala-2.10/classes/SimpleApp$$anonfun$14.class -> lastModified(1429998599000)
-/home/user/yelp/scala/target/scala-2.10/classes/SimpleApp$$anonfun$7.class -> lastModified(1429998599000)
-/home/user/yelp/scala/target/scala-2.10/classes/SimpleApp$$anonfun$8.class -> lastModified(1429998599000)
-/home/user/yelp/scala/target/scala-2.10/classes/SimpleApp$$anonfun$9.class -> lastModified(1429998599000)
-/home/user/yelp/scala/target/scala-2.10/classes/SimpleApp$$anonfun$stage6A$1$$anonfun$apply$mcVI$sp$1.class -> lastModified(1429998599000)
-/home/user/yelp/scala/target/scala-2.10/classes/SimpleApp$$anonfun$stage6A$1.class -> lastModified(1429998599000)
-/home/user/yelp/scala/target/scala-2.10/classes/SimpleApp$$typecreator1$1.class -> lastModified(1429998599000)
-/home/user/yelp/scala/target/scala-2.10/classes/SimpleApp$$typecreator2$1.class -> lastModified(1429998599000)
-/home/user/yelp/scala/target/scala-2.10/classes/SimpleApp$$typecreator3$1.class -> lastModified(1429998599000)
-/home/user/yelp/scala/target/scala-2.10/classes/SimpleApp$$typecreator4$1.class -> lastModified(1429998599000)
-/home/user/yelp/scala/target/scala-2.10/classes/SimpleApp$$typecreator5$1.class -> lastModified(1429998599000)
-/home/user/yelp/scala/target/scala-2.10/classes/SimpleApp$.class -> lastModified(1429998599000)
-/home/user/yelp/scala/target/scala-2.10/classes/SimpleApp$Config$3.class -> lastModified(1429998599000)
-/home/user/yelp/scala/target/scala-2.10/classes/SimpleApp$Config$4$.class -> lastModified(1429998600000)
-/home/user/yelp/scala/target/scala-2.10/classes/SimpleApp$WordVec$3.class -> lastModified(1429998600000)
-/home/user/yelp/scala/target/scala-2.10/classes/SimpleApp$WordVec$4$.class -> lastModified(1429998600000)
-/home/user/yelp/scala/target/scala-2.10/classes/SimpleApp.class -> lastModified(1429998599000)
+33 items
+/home/user/yelp/scala/target/scala-2.10/classes/Document$.class -> lastModified(1430070129000)
+/home/user/yelp/scala/target/scala-2.10/classes/Document.class -> lastModified(1430070129000)
+/home/user/yelp/scala/target/scala-2.10/classes/LabeledDocument$.class -> lastModified(1430070129000)
+/home/user/yelp/scala/target/scala-2.10/classes/LabeledDocument.class -> lastModified(1430070129000)
+/home/user/yelp/scala/target/scala-2.10/classes/SimpleApp$$anon$1$$anonfun$1.class -> lastModified(1430070129000)
+/home/user/yelp/scala/target/scala-2.10/classes/SimpleApp$$anon$1$$anonfun$2.class -> lastModified(1430070129000)
+/home/user/yelp/scala/target/scala-2.10/classes/SimpleApp$$anon$1$$anonfun$3.class -> lastModified(1430070129000)
+/home/user/yelp/scala/target/scala-2.10/classes/SimpleApp$$anon$1$$anonfun$4.class -> lastModified(1430070129000)
+/home/user/yelp/scala/target/scala-2.10/classes/SimpleApp$$anon$1$$anonfun$5.class -> lastModified(1430070129000)
+/home/user/yelp/scala/target/scala-2.10/classes/SimpleApp$$anon$1$$anonfun$6.class -> lastModified(1430070129000)
+/home/user/yelp/scala/target/scala-2.10/classes/SimpleApp$$anon$1$$anonfun$7.class -> lastModified(1430070129000)
+/home/user/yelp/scala/target/scala-2.10/classes/SimpleApp$$anon$1.class -> lastModified(1430070129000)
+/home/user/yelp/scala/target/scala-2.10/classes/SimpleApp$$anonfun$10.class -> lastModified(1430070129000)
+/home/user/yelp/scala/target/scala-2.10/classes/SimpleApp$$anonfun$11.class -> lastModified(1430070129000)
+/home/user/yelp/scala/target/scala-2.10/classes/SimpleApp$$anonfun$12.class -> lastModified(1430070129000)
+/home/user/yelp/scala/target/scala-2.10/classes/SimpleApp$$anonfun$13.class -> lastModified(1430070129000)
+/home/user/yelp/scala/target/scala-2.10/classes/SimpleApp$$anonfun$14.class -> lastModified(1430070129000)
+/home/user/yelp/scala/target/scala-2.10/classes/SimpleApp$$anonfun$15.class -> lastModified(1430070129000)
+/home/user/yelp/scala/target/scala-2.10/classes/SimpleApp$$anonfun$8.class -> lastModified(1430070129000)
+/home/user/yelp/scala/target/scala-2.10/classes/SimpleApp$$anonfun$9.class -> lastModified(1430070129000)
+/home/user/yelp/scala/target/scala-2.10/classes/SimpleApp$$anonfun$stage6A$1$$anonfun$apply$mcVI$sp$1.class -> lastModified(1430070129000)
+/home/user/yelp/scala/target/scala-2.10/classes/SimpleApp$$anonfun$stage6A$1.class -> lastModified(1430070129000)
+/home/user/yelp/scala/target/scala-2.10/classes/SimpleApp$$typecreator1$1.class -> lastModified(1430070129000)
+/home/user/yelp/scala/target/scala-2.10/classes/SimpleApp$$typecreator2$1.class -> lastModified(1430070129000)
+/home/user/yelp/scala/target/scala-2.10/classes/SimpleApp$$typecreator3$1.class -> lastModified(1430070129000)
+/home/user/yelp/scala/target/scala-2.10/classes/SimpleApp$$typecreator4$1.class -> lastModified(1430070129000)
+/home/user/yelp/scala/target/scala-2.10/classes/SimpleApp$$typecreator5$1.class -> lastModified(1430070129000)
+/home/user/yelp/scala/target/scala-2.10/classes/SimpleApp$.class -> lastModified(1430070129000)
+/home/user/yelp/scala/target/scala-2.10/classes/SimpleApp$Config$3.class -> lastModified(1430070129000)
+/home/user/yelp/scala/target/scala-2.10/classes/SimpleApp$Config$4$.class -> lastModified(1430070129000)
+/home/user/yelp/scala/target/scala-2.10/classes/SimpleApp$WordVec$3.class -> lastModified(1430070129000)
+/home/user/yelp/scala/target/scala-2.10/classes/SimpleApp$WordVec$4$.class -> lastModified(1430070129000)
+/home/user/yelp/scala/target/scala-2.10/classes/SimpleApp.class -> lastModified(1430070129000)
 source stamps:
 1 items
-/home/user/yelp/scala/src/main/scala/SimpleApp.scala -> hash(8310098531794eab2133571c15baac3e3ccd0b49)
+/home/user/yelp/scala/src/main/scala/SimpleApp.scala -> hash(1d59fed64a02c3079f14cba5000e9d4d6e770196)
 binary stamps:
 10 items
 /home/user/.ivy2/cache/com.databricks/spark-csv_2.10/jars/spark-csv_2.10-1.0.3.jar -> lastModified(1428394583000)
@@ -467,18 +515,18 @@ class names:
 10 items
 /home/user/.ivy2/cache/com.databricks/spark-csv_2.10/jars/spark-csv_2.10-1.0.3.jar -> com.databricks.spark.csv.package$
 /home/user/.ivy2/cache/com.github.scopt/scopt_2.10/jars/scopt_2.10-3.3.0.jar -> scopt.OptionParser
-/home/user/.ivy2/cache/log4j/log4j/bundles/log4j-1.2.17.jar -> org.apache.log4j.Level
-/home/user/.ivy2/cache/org.apache.spark/spark-catalyst_2.10/jars/spark-catalyst_2.10-1.3.0.jar -> org.apache.spark.sql.Row$
-/home/user/.ivy2/cache/org.apache.spark/spark-core_2.10/jars/spark-core_2.10-1.3.0.jar -> org.apache.spark.SparkConf
-/home/user/.ivy2/cache/org.apache.spark/spark-mllib_2.10/jars/spark-mllib_2.10-1.3.0.jar -> org.apache.spark.mllib.linalg.DenseVector$
+/home/user/.ivy2/cache/log4j/log4j/bundles/log4j-1.2.17.jar -> org.apache.log4j.Category
+/home/user/.ivy2/cache/org.apache.spark/spark-catalyst_2.10/jars/spark-catalyst_2.10-1.3.0.jar -> org.apache.spark.sql.Row
+/home/user/.ivy2/cache/org.apache.spark/spark-core_2.10/jars/spark-core_2.10-1.3.0.jar -> org.apache.spark.rdd.RDD
+/home/user/.ivy2/cache/org.apache.spark/spark-mllib_2.10/jars/spark-mllib_2.10-1.3.0.jar -> org.apache.spark.mllib.linalg.DenseVector
 /home/user/.ivy2/cache/org.apache.spark/spark-sql_2.10/jars/spark-sql_2.10-1.3.0.jar -> org.apache.spark.sql.DataFrame
-/home/user/.sbt/boot/scala-2.10.4/lib/scala-library.jar -> scala.runtime.AbstractFunction3
+/home/user/.sbt/boot/scala-2.10.4/lib/scala-library.jar -> scala.runtime.AbstractFunction7
 /home/user/.sbt/boot/scala-2.10.4/lib/scala-reflect.jar -> scala.reflect.api.TypeCreator
 /usr/lib/jvm/java-6-openjdk-amd64/jre/lib/rt.jar -> java.lang.Object
 internal apis:
 1 items
 /home/user/yelp/scala/src/main/scala/SimpleApp.scala -> 
-rO0ABXNyABB4c2J0aS5hcGkuU291cmNlFlpwRASfbtoCAAZJAAdhcGlIYXNoWgAIaGFzTWFjcm9MABhfaW50ZXJuYWxPbmx5X25hbWVIYXNoZXN0ACRMeHNidGkvYXBpL19pbnRlcm5hbE9ubHlfTmFtZUhhc2hlcztMAANhcGl0ABVMeHNidGkvYXBpL1NvdXJjZUFQSTtMAAtjb21waWxhdGlvbnQAF0x4c2J0aS9hcGkvQ29tcGlsYXRpb247WwAEaGFzaHQAAltCeHDgAmLOAHNyACJ4c2J0aS5hcGkuX2ludGVybmFsT25seV9OYW1lSGFzaGVzVNq+mfrU7EwCAAJbAA9pbXBsaWNpdE1lbWJlcnN0ACNbTHhzYnRpL2FwaS9faW50ZXJuYWxPbmx5X05hbWVIYXNoO1sADnJlZ3VsYXJNZW1iZXJzcQB+AAd4cHVyACNbTHhzYnRpLmFwaS5faW50ZXJuYWxPbmx5X05hbWVIYXNoO0lagLbdlov0AgAAeHAAAAAAdXEAfgAJAAAAM3NyACB4c2J0aS5hcGkuX2ludGVybmFsT25seV9OYW1lSGFzaFsO9SJ2OFfPAgACSQAEaGFzaEwABG5hbWV0ABJMamF2YS9sYW5nL1N0cmluZzt4cCHpwnF0AAZub3RpZnlzcQB+AAzy0NrddAAHc3RhZ2UzQXNxAH4ADKudY950AAR3YWl0c3EAfgAMsiFShXQADmNvcHkkZGVmYXVsdCQyc3EAfgAMSgDX7HQADSRhc0luc3RhbmNlT2ZzcQB+AAwsOoiEdAAMcHJvZHVjdEFyaXR5c3EAfgAM8VlQonQABmVxdWFsc3NxAH4ADN5MOgZ0AAxhc0luc3RhbmNlT2ZzcQB+AAzeVFm6dAAMc3luY2hyb25pemVkc3EAfgAMLnWYQ3QABWxhYmVsc3EAfgAM6xFcHnQADSRpc0luc3RhbmNlT2ZzcQB+AAzD7sMddAAEdGV4dHNxAH4ADEBwK1x0AAhjYW5FcXVhbHNxAH4ADDmdyMl0AARtYWluc3EAfgAM8E11KHQADXByb2R1Y3RQcmVmaXhzcQB+AAxpk3tydAAJbm90aWZ5QWxsc3EAfgAMKZVa2XQADGlzSW5zdGFuY2VPZnNxAH4ADFUuy750AApyZXZpZXdQYXRoc3EAfgAM/uZUFXQAB3N0YWdlMkJzcQB+AAyNuhIQdAARcmV2aWV3UGFycXVldEZpbGVzcQB+AAzpeY+fdAAGPGluaXQ+c3EAfgAM7u4AKXQAAmlkc3EAfgAMPXCvQHQAB3N0YWdlNkFzcQB+AAzp6W8RdAAMYnVzaW5lc3NQYXRoc3EAfgAMo5BOR3QAAj09c3EAfgAMcpGGB3QABWNsb25lc3EAfgAMqH5XcXQABnN0YWdlNHNxAH4ADPysAa90AAlTaW1wbGVBcHBzcQB+AAyL3AcwdAAPdXNlclBhcnF1ZXRGaWxlc3EAfgAMUqq9JHQADmNvcHkkZGVmYXVsdCQzc3EAfgAMf6WaKHQABGNvcHlzcQB+AAziLwFZdAAIY2F0ZWdvcnlzcQB+AAywjObUdAAIdG9TdHJpbmdzcQB+AAwYqhLpdAAGc3RhZ2Uxc3EAfgAMU7iqc3QADnNlcnZpY2VDc3ZGaWxlc3EAfgAMuFDKf3QAAiE9c3EAfgAM6Ze8WXQAB3N0YWdlMkFzcQB+AAwDaTqDdAAIZ2V0Q2xhc3NzcQB+AAzsS8IrdAAOY29weSRkZWZhdWx0JDFzcQB+AAweRSCndAATYnVzaW5lc3NQYXJxdWV0RmlsZXNxAH4ADOK/6Mt0AAdzdGFnZTZCc3EAfgAMm3LKWHQAAm5lc3EAfgAMLVnnCXQACHVzZXJQYXRoc3EAfgAMVFJRBnQAAmVxc3EAfgAMMRaXQXQAD0xhYmVsZWREb2N1bWVudHNxAH4ADEpkH0F0AA9wcm9kdWN0SXRlcmF0b3JzcQB+AAwkJBcCdAACIyNzcQB+AAynPxqVdAAIZmluYWxpemVzcQB+AAxgvks/dAAOcHJvZHVjdEVsZW1lbnRzcQB+AAzuvQpOdAAIaGFzaENvZGVzcQB+AAyN3BKudAAIRG9jdW1lbnRzcgATeHNidGkuYXBpLlNvdXJjZUFQSblep/kpIzikAgACWwALZGVmaW5pdGlvbnN0ABdbTHhzYnRpL2FwaS9EZWZpbml0aW9uO1sACHBhY2thZ2VzdAAUW0x4c2J0aS9hcGkvUGFja2FnZTt4cHVyABdbTHhzYnRpLmFwaS5EZWZpbml0aW9uO4jJXOe0414OAgAAeHAAAAADc3IAE3hzYnRpLmFwaS5DbGFzc0xpa2WDNByh37CXbAIABEwADmRlZmluaXRpb25UeXBldAAaTHhzYnRpL2FwaS9EZWZpbml0aW9uVHlwZTtbABBzYXZlZEFubm90YXRpb25zdAATW0xqYXZhL2xhbmcvU3RyaW5nO0wACHNlbGZUeXBldAAQTHhzYnRpL2FwaS9MYXp5O0wACXN0cnVjdHVyZXEAfgB9eHIAIXhzYnRpLmFwaS5QYXJhbWV0ZXJpemVkRGVmaW5pdGlvbvkRbrHVUDziAgABWwAOdHlwZVBhcmFtZXRlcnN0ABpbTHhzYnRpL2FwaS9UeXBlUGFyYW1ldGVyO3hyABR4c2J0aS5hcGkuRGVmaW5pdGlvbocqG+hxQuNGAgAETAAGYWNjZXNzdAASTHhzYnRpL2FwaS9BY2Nlc3M7WwALYW5ub3RhdGlvbnN0ABdbTHhzYnRpL2FwaS9Bbm5vdGF0aW9uO0wACW1vZGlmaWVyc3QAFUx4c2J0aS9hcGkvTW9kaWZpZXJzO0wABG5hbWVxAH4ADXhwc3IAEHhzYnRpLmFwaS5QdWJsaWO6WD2ubC1gQgIAAHhyABB4c2J0aS5hcGkuQWNjZXNz3WKa+B1jMUgCAAB4cHVyABdbTHhzYnRpLmFwaS5Bbm5vdGF0aW9uO+uX6xkQ9o1IAgAAeHAAAAABc3IAFHhzYnRpLmFwaS5Bbm5vdGF0aW9u3g6BovZcCrICAAJbAAlhcmd1bWVudHN0AB9bTHhzYnRpL2FwaS9Bbm5vdGF0aW9uQXJndW1lbnQ7TAAEYmFzZXQAEEx4c2J0aS9hcGkvVHlwZTt4cHVyAB9bTHhzYnRpLmFwaS5Bbm5vdGF0aW9uQXJndW1lbnQ7UZ2mjzglD3gCAAB4cAAAAAFzcgAceHNidGkuYXBpLkFubm90YXRpb25Bcmd1bWVudNZFsdgDGxd8AgACTAAEbmFtZXEAfgANTAAFdmFsdWVxAH4ADXhwdAAAdAACKClzcgAUeHNidGkuYXBpLlByb2plY3Rpb27z0o1U6UWkLQIAAkwAAmlkcQB+AA1MAAZwcmVmaXh0ABZMeHNidGkvYXBpL1NpbXBsZVR5cGU7eHIAFHhzYnRpLmFwaS5TaW1wbGVUeXBlcnhiiCEjv0ACAAB4cgAOeHNidGkuYXBpLlR5cGU/atkhFkmqygIAAHhwdAAIQmVhbkluZm9zcgATeHNidGkuYXBpLlNpbmdsZXRvbvynX/jPVuRGAgABTAAEcGF0aHQAEEx4c2J0aS9hcGkvUGF0aDt4cQB+AJZzcgAOeHNidGkuYXBpLlBhdGibPVwIzqUnhAIAAVsACmNvbXBvbmVudHN0ABpbTHhzYnRpL2FwaS9QYXRoQ29tcG9uZW50O3hwdXIAGltMeHNidGkuYXBpLlBhdGhDb21wb25lbnQ7Q9oJdC1nFnQCAAB4cAAAAANzcgAMeHNidGkuYXBpLklkmDJsizdTxEACAAFMAAJpZHEAfgANeHIAF3hzYnRpLmFwaS5QYXRoQ29tcG9uZW50X5oiWy6Gn7wCAAB4cHQABXNjYWxhc3EAfgCidAAFYmVhbnNzcgAOeHNidGkuYXBpLlRoaXPbCe2mzFpAXAIAAHhxAH4Ao3NyABN4c2J0aS5hcGkuTW9kaWZpZXJzxxETIWmc3CQCAAFCAAVmbGFnc3hwAHEAfgBndXIAGltMeHNidGkuYXBpLlR5cGVQYXJhbWV0ZXI72W0mDyid8rYCAAB4cAAAAAB+cgAYeHNidGkuYXBpLkRlZmluaXRpb25UeXBlAAAAAAAAAAASAAB4cgAOamF2YS5sYW5nLkVudW0AAAAAAAAAABIAAHhwdAAIQ2xhc3NEZWZ1cgATW0xqYXZhLmxhbmcuU3RyaW5nO63SVufpHXtHAgAAeHAAAAAAc3IAE3hzYnRpLlNhZmVMYXp5JEltcGxQAi6Tl5dAPwIAA1oACGJpdG1hcCQwTAACX3R0ABJMamF2YS9sYW5nL09iamVjdDtMAARldmFsdAARTHNjYWxhL0Z1bmN0aW9uMDt4cgAWeHNidGkuYXBpLkFic3RyYWN0TGF6edN3tQFfu+egAgAAeHABc3IAE3hzYnRpLmFwaS5FbXB0eVR5cGW8/Z5GSTuJJAIAAHhxAH4AlnBzcQB+ALQBc3IAE3hzYnRpLmFwaS5TdHJ1Y3R1cmWpqvmAk2/YAAIAA0wACGRlY2xhcmVkcQB+AH1MAAlpbmhlcml0ZWRxAH4AfUwAB3BhcmVudHNxAH4AfXhxAH4Al3NxAH4AtAF1cQB+AHgAAAAAcHNxAH4AtAF1cQB+AHgAAAAAcHNxAH4AtAF1cgARW0x4c2J0aS5hcGkuVHlwZTt0/6Vae/npQQIAAHhwAAAABnNxAH4AlHQADFNlcmlhbGl6YWJsZXNxAH4AmnNxAH4AnXVxAH4AoAAAAAJzcQB+AKJxAH4ApXEAfgCpc3EAfgCUcQB+AMZzcQB+AJpzcQB+AJ11cQB+AKAAAAADc3EAfgCidAAEamF2YXNxAH4AonQAAmlvcQB+AKlzcQB+AJR0AAdQcm9kdWN0cQB+AMdzcQB+AJR0AAZFcXVhbHNxAH4Ax3NxAH4AlHQABk9iamVjdHNxAH4AmnNxAH4AnXVxAH4AoAAAAANzcQB+AKJxAH4A0HNxAH4AonQABGxhbmdxAH4AqXNxAH4AlHQAA0FueXEAfgDHcHBzcQB+AHpxAH4Ah3VxAH4AiAAAAAFzcQB+AIp1cQB+AI4AAAABc3EAfgCQcQB+AJJ0AAIoKXEAfgCYc3EAfgCqAHEAfgBzdXEAfgCsAAAAAHEAfgCwdXEAfgCyAAAAAHNxAH4AtAFxAH4AunBzcQB+ALQBc3EAfgC8c3EAfgC0AXVxAH4AeAAAAABwc3EAfgC0AXVxAH4AeAAAAABwc3EAfgC0AXVxAH4AwwAAAAZzcQB+AJRxAH4AxnNxAH4AmnNxAH4AnXVxAH4AoAAAAAJzcQB+AKJxAH4ApXEAfgCpc3EAfgCUcQB+AMZzcQB+AJpzcQB+AJ11cQB+AKAAAAADc3EAfgCicQB+ANBzcQB+AKJ0AAJpb3EAfgCpc3EAfgCUcQB+ANRxAH4A9HNxAH4AlHQABkVxdWFsc3EAfgD0c3EAfgCUcQB+ANhzcQB+AJpzcQB+AJ11cQB+AKAAAAADc3EAfgCicQB+ANBzcQB+AKJxAH4A3nEAfgCpc3EAfgCUcQB+AOBxAH4A9HBwc3EAfgB6cQB+AId1cQB+AIgAAAAAc3EAfgCqAHEAfgBFdXEAfgCsAAAAAH5xAH4ArnQABk1vZHVsZXVxAH4AsgAAAABzcQB+ALQBcQB+ALpwc3EAfgC0AXNxAH4AvHNxAH4AtAF1cQB+AHgAAAABc3IADXhzYnRpLmFwaS5EZWZSvp/ifLQ2aQIAAkwACnJldHVyblR5cGVxAH4AjFsAD3ZhbHVlUGFyYW1ldGVyc3QAGltMeHNidGkvYXBpL1BhcmFtZXRlckxpc3Q7eHEAfgB+cQB+AId1cQB+AIgAAAAAc3EAfgCqAHEAfgApdXEAfgCsAAAAAHNxAH4AlHQABFVuaXRzcQB+AJpzcQB+AJ11cQB+AKAAAAACc3EAfgCicQB+AKVxAH4AqXVyABpbTHhzYnRpLmFwaS5QYXJhbWV0ZXJMaXN0O/XTOh3ys3DuAgAAeHAAAAABc3IAF3hzYnRpLmFwaS5QYXJhbWV0ZXJMaXN01sW8HGRJdOMCAAJaAAppc0ltcGxpY2l0WwAKcGFyYW1ldGVyc3QAHFtMeHNidGkvYXBpL01ldGhvZFBhcmFtZXRlcjt4cAB1cgAcW0x4c2J0aS5hcGkuTWV0aG9kUGFyYW1ldGVyO8+4xV2l3bVtAgAAeHAAAAABc3IAGXhzYnRpLmFwaS5NZXRob2RQYXJhbWV0ZXIfRa4X00mw6gIABFoACmhhc0RlZmF1bHRMAAhtb2RpZmllcnQAHUx4c2J0aS9hcGkvUGFyYW1ldGVyTW9kaWZpZXI7TAAEbmFtZXEAfgANTAADdHBlcQB+AIx4cAB+cgAbeHNidGkuYXBpLlBhcmFtZXRlck1vZGlmaWVyAAAAAAAAAAASAAB4cQB+AK90AAVQbGFpbnQABGFyZ3NzcgAXeHNidGkuYXBpLlBhcmFtZXRlcml6ZWQWbO5pA8m7fwIAAkwACGJhc2VUeXBlcQB+AJVbAA10eXBlQXJndW1lbnRzdAARW0x4c2J0aS9hcGkvVHlwZTt4cQB+AJZzcQB+AJR0AAVBcnJheXEAfgEddXEAfgDDAAAAAXNxAH4AlHQABlN0cmluZ3NxAH4AmnNxAH4AnXVxAH4AoAAAAANzcQB+AKJxAH4A0HNxAH4AonEAfgDecQB+AKlwc3EAfgC0AXVxAH4AeAAAAABwc3EAfgC0AXVxAH4AwwAAAAJzcQB+AJRxAH4A2HEAfgE3c3EAfgCUcQB+AOBxAH4BHXBwdXIAFFtMeHNidGkuYXBpLlBhY2thZ2U7WxMZN3CnJ6ECAAB4cAAAAABzcgAVeHNidGkuYXBpLkNvbXBpbGF0aW9u7frgw2rooEICAAJKAAlzdGFydFRpbWVbAAdvdXRwdXRzdAAaW0x4c2J0aS9hcGkvT3V0cHV0U2V0dGluZzt4cAAAAUzyjuwvdXIAGltMeHNidGkuYXBpLk91dHB1dFNldHRpbmc7f2rC86eHpUICAAB4cAAAAAFzcgAXeHNidGkuYXBpLk91dHB1dFNldHRpbmd62ZpHdPsdewIAAkwAD291dHB1dERpcmVjdG9yeXEAfgANTAAPc291cmNlRGlyZWN0b3J5cQB+AA14cHQALy9ob21lL3VzZXIveWVscC9zY2FsYS90YXJnZXQvc2NhbGEtMi4xMC9jbGFzc2VzdAABL3VyAAJbQqzzF/gGCFTgAgAAeHAAAAAUgxAJhTF5TqshM1ccFbqsPjzNC0k=
+rO0ABXNyABB4c2J0aS5hcGkuU291cmNlFlpwRASfbtoCAAZJAAdhcGlIYXNoWgAIaGFzTWFjcm9MABhfaW50ZXJuYWxPbmx5X25hbWVIYXNoZXN0ACRMeHNidGkvYXBpL19pbnRlcm5hbE9ubHlfTmFtZUhhc2hlcztMAANhcGl0ABVMeHNidGkvYXBpL1NvdXJjZUFQSTtMAAtjb21waWxhdGlvbnQAF0x4c2J0aS9hcGkvQ29tcGlsYXRpb247WwAEaGFzaHQAAltCeHDcRvpPAHNyACJ4c2J0aS5hcGkuX2ludGVybmFsT25seV9OYW1lSGFzaGVzVNq+mfrU7EwCAAJbAA9pbXBsaWNpdE1lbWJlcnN0ACNbTHhzYnRpL2FwaS9faW50ZXJuYWxPbmx5X05hbWVIYXNoO1sADnJlZ3VsYXJNZW1iZXJzcQB+AAd4cHVyACNbTHhzYnRpLmFwaS5faW50ZXJuYWxPbmx5X05hbWVIYXNoO0lagLbdlov0AgAAeHAAAAAAdXEAfgAJAAAAOXNyACB4c2J0aS5hcGkuX2ludGVybmFsT25seV9OYW1lSGFzaFsO9SJ2OFfPAgACSQAEaGFzaEwABG5hbWV0ABJMamF2YS9sYW5nL1N0cmluZzt4cCHpwnF0AAZub3RpZnlzcQB+AAzy0NrddAAHc3RhZ2UzQXNxAH4ADKH3vSp0ABdidXNpbmVzc1dlaWdodGVkU2VydmljZXNxAH4ADGWuZJB0AARiX2lkc3EAfgAMq51j3nQABHdhaXRzcQB+AAyyIVKFdAAOY29weSRkZWZhdWx0JDJzcQB+AAxKANfsdAANJGFzSW5zdGFuY2VPZnNxAH4ADCw6iIR0AAxwcm9kdWN0QXJpdHlzcQB+AAzxWVCidAAGZXF1YWxzc3EAfgAM3kw6BnQADGFzSW5zdGFuY2VPZnNxAH4ADN5UWbp0AAxzeW5jaHJvbml6ZWRzcQB+AAwudZhDdAAFbGFiZWxzcQB+AAzrEVwedAANJGlzSW5zdGFuY2VPZnNxAH4ADMPuwx10AAR0ZXh0c3EAfgAMQHArXHQACGNhbkVxdWFsc3EAfgAMtqHAVXQADmNvcHkkZGVmYXVsdCQ0c3EAfgAMOZ3IyXQABG1haW5zcQB+AAzwTXUodAANcHJvZHVjdFByZWZpeHNxAH4ADITEQpl0AAZzdGFnZTdzcQB+AAxpk3tydAAJbm90aWZ5QWxsc3EAfgAMKZVa2XQADGlzSW5zdGFuY2VPZnNxAH4ADFUuy750AApyZXZpZXdQYXRoc3EAfgAM/uZUFXQAB3N0YWdlMkJzcQB+AAyNuhIQdAARcmV2aWV3UGFycXVldEZpbGVzcQB+AAz3PpyxdAAGPGluaXQ+c3EAfgAM7u4AKXQAAmlkc3EAfgAMPXCvQHQAB3N0YWdlNkFzcQB+AAzp6W8RdAAMYnVzaW5lc3NQYXRoc3EAfgAMo5BOR3QAAj09c3EAfgAMcpGGB3QABWNsb25lc3EAfgAMqH5XcXQABnN0YWdlNHNxAH4ADGSnPGd0ABFwcmVkaWN0aW9uQ3N2RmlsZXNxAH4ADPysAa90AAlTaW1wbGVBcHBzcQB+AAyL3AcwdAAPdXNlclBhcnF1ZXRGaWxlc3EAfgAMUqq9JHQADmNvcHkkZGVmYXVsdCQzc3EAfgAM7rDVdHQABGNvcHlzcQB+AAziLwFZdAAIY2F0ZWdvcnlzcQB+AAywjObUdAAIdG9TdHJpbmdzcQB+AAwYqhLpdAAGc3RhZ2Uxc3EAfgAMU7iqc3QADnNlcnZpY2VDc3ZGaWxlc3EAfgAMuFDKf3QAAiE9c3EAfgAM6Ze8WXQAB3N0YWdlMkFzcQB+AAwDaTqDdAAIZ2V0Q2xhc3NzcQB+AAzsS8IrdAAOY29weSRkZWZhdWx0JDFzcQB+AAweRSCndAATYnVzaW5lc3NQYXJxdWV0RmlsZXNxAH4ADOK/6Mt0AAdzdGFnZTZCc3EAfgAMm3LKWHQAAm5lc3EAfgAMLVnnCXQACHVzZXJQYXRoc3EAfgAMVFJRBnQAAmVxc3EAfgAMMRaXQXQAD0xhYmVsZWREb2N1bWVudHNxAH4ADOFx7gJ0ABZidXNpbmVzc1JhdGluZ3NDc3ZGaWxlc3EAfgAMSmQfQXQAD3Byb2R1Y3RJdGVyYXRvcnNxAH4ADCQkFwJ0AAIjI3NxAH4ADKc/GpV0AAhmaW5hbGl6ZXNxAH4ADGC+Sz90AA5wcm9kdWN0RWxlbWVudHNxAH4ADO69Ck50AAhoYXNoQ29kZXNxAH4ADI3cEq50AAhEb2N1bWVudHNyABN4c2J0aS5hcGkuU291cmNlQVBJuV6n+SkjOKQCAAJbAAtkZWZpbml0aW9uc3QAF1tMeHNidGkvYXBpL0RlZmluaXRpb247WwAIcGFja2FnZXN0ABRbTHhzYnRpL2FwaS9QYWNrYWdlO3hwdXIAF1tMeHNidGkuYXBpLkRlZmluaXRpb247iMlc57TjXg4CAAB4cAAAAANzcgATeHNidGkuYXBpLkNsYXNzTGlrZYM0HKHfsJdsAgAETAAOZGVmaW5pdGlvblR5cGV0ABpMeHNidGkvYXBpL0RlZmluaXRpb25UeXBlO1sAEHNhdmVkQW5ub3RhdGlvbnN0ABNbTGphdmEvbGFuZy9TdHJpbmc7TAAIc2VsZlR5cGV0ABBMeHNidGkvYXBpL0xhenk7TAAJc3RydWN0dXJlcQB+AIl4cgAheHNidGkuYXBpLlBhcmFtZXRlcml6ZWREZWZpbml0aW9u+RFusdVQPOICAAFbAA50eXBlUGFyYW1ldGVyc3QAGltMeHNidGkvYXBpL1R5cGVQYXJhbWV0ZXI7eHIAFHhzYnRpLmFwaS5EZWZpbml0aW9uhyob6HFC40YCAARMAAZhY2Nlc3N0ABJMeHNidGkvYXBpL0FjY2VzcztbAAthbm5vdGF0aW9uc3QAF1tMeHNidGkvYXBpL0Fubm90YXRpb247TAAJbW9kaWZpZXJzdAAVTHhzYnRpL2FwaS9Nb2RpZmllcnM7TAAEbmFtZXEAfgANeHBzcgAQeHNidGkuYXBpLlB1YmxpY7pYPa5sLWBCAgAAeHIAEHhzYnRpLmFwaS5BY2Nlc3PdYpr4HWMxSAIAAHhwdXIAF1tMeHNidGkuYXBpLkFubm90YXRpb24765frGRD2jUgCAAB4cAAAAAFzcgAUeHNidGkuYXBpLkFubm90YXRpb27eDoGi9lwKsgIAAlsACWFyZ3VtZW50c3QAH1tMeHNidGkvYXBpL0Fubm90YXRpb25Bcmd1bWVudDtMAARiYXNldAAQTHhzYnRpL2FwaS9UeXBlO3hwdXIAH1tMeHNidGkuYXBpLkFubm90YXRpb25Bcmd1bWVudDtRnaaPOCUPeAIAAHhwAAAAAXNyABx4c2J0aS5hcGkuQW5ub3RhdGlvbkFyZ3VtZW501kWx2AMbF3wCAAJMAARuYW1lcQB+AA1MAAV2YWx1ZXEAfgANeHB0AAB0AAIoKXNyABR4c2J0aS5hcGkuUHJvamVjdGlvbvPSjVTpRaQtAgACTAACaWRxAH4ADUwABnByZWZpeHQAFkx4c2J0aS9hcGkvU2ltcGxlVHlwZTt4cgAUeHNidGkuYXBpLlNpbXBsZVR5cGVyeGKIISO/QAIAAHhyAA54c2J0aS5hcGkuVHlwZT9q2SEWSarKAgAAeHB0AAhCZWFuSW5mb3NyABN4c2J0aS5hcGkuU2luZ2xldG9u/Kdf+M9W5EYCAAFMAARwYXRodAAQTHhzYnRpL2FwaS9QYXRoO3hxAH4AonNyAA54c2J0aS5hcGkuUGF0aJs9XAjOpSeEAgABWwAKY29tcG9uZW50c3QAGltMeHNidGkvYXBpL1BhdGhDb21wb25lbnQ7eHB1cgAaW0x4c2J0aS5hcGkuUGF0aENvbXBvbmVudDtD2gl0LWcWdAIAAHhwAAAAA3NyAAx4c2J0aS5hcGkuSWSYMmyLN1PEQAIAAUwAAmlkcQB+AA14cgAXeHNidGkuYXBpLlBhdGhDb21wb25lbnRfmiJbLoafvAIAAHhwdAAFc2NhbGFzcQB+AK50AAViZWFuc3NyAA54c2J0aS5hcGkuVGhpc9sJ7abMWkBcAgAAeHEAfgCvc3IAE3hzYnRpLmFwaS5Nb2RpZmllcnPHERMhaZzcJAIAAUIABWZsYWdzeHAAcQB+AHF1cgAaW0x4c2J0aS5hcGkuVHlwZVBhcmFtZXRlcjvZbSYPKJ3ytgIAAHhwAAAAAH5yABh4c2J0aS5hcGkuRGVmaW5pdGlvblR5cGUAAAAAAAAAABIAAHhyAA5qYXZhLmxhbmcuRW51bQAAAAAAAAAAEgAAeHB0AAhDbGFzc0RlZnVyABNbTGphdmEubGFuZy5TdHJpbmc7rdJW5+kde0cCAAB4cAAAAABzcgATeHNidGkuU2FmZUxhenkkSW1wbFACLpOXl0A/AgADWgAIYml0bWFwJDBMAAJfdHQAEkxqYXZhL2xhbmcvT2JqZWN0O0wABGV2YWx0ABFMc2NhbGEvRnVuY3Rpb24wO3hyABZ4c2J0aS5hcGkuQWJzdHJhY3RMYXp503e1AV+756ACAAB4cAFzcgATeHNidGkuYXBpLkVtcHR5VHlwZbz9nkZJO4kkAgAAeHEAfgCicHNxAH4AwAFzcgATeHNidGkuYXBpLlN0cnVjdHVyZamq+YCTb9gAAgADTAAIZGVjbGFyZWRxAH4AiUwACWluaGVyaXRlZHEAfgCJTAAHcGFyZW50c3EAfgCJeHEAfgCjc3EAfgDAAXVxAH4AhAAAAABwc3EAfgDAAXVxAH4AhAAAAABwc3EAfgDAAXVyABFbTHhzYnRpLmFwaS5UeXBlO3T/pVp7+elBAgAAeHAAAAAGc3EAfgCgdAAMU2VyaWFsaXphYmxlc3EAfgCmc3EAfgCpdXEAfgCsAAAAAnNxAH4ArnEAfgCxcQB+ALVzcQB+AKBxAH4A0nNxAH4ApnNxAH4AqXVxAH4ArAAAAANzcQB+AK50AARqYXZhc3EAfgCudAACaW9xAH4AtXNxAH4AoHQAB1Byb2R1Y3RxAH4A03NxAH4AoHQABkVxdWFsc3EAfgDTc3EAfgCgdAAGT2JqZWN0c3EAfgCmc3EAfgCpdXEAfgCsAAAAA3NxAH4ArnEAfgDcc3EAfgCudAAEbGFuZ3EAfgC1c3EAfgCgdAADQW55cQB+ANNwcHNxAH4AhnEAfgCTdXEAfgCUAAAAAXNxAH4AlnVxAH4AmgAAAAFzcQB+AJxxAH4AnnQAAigpcQB+AKRzcQB+ALYAcQB+AH91cQB+ALgAAAAAcQB+ALx1cQB+AL4AAAAAc3EAfgDAAXEAfgDGcHNxAH4AwAFzcQB+AMhzcQB+AMABdXEAfgCEAAAAAHBzcQB+AMABdXEAfgCEAAAAAHBzcQB+AMABdXEAfgDPAAAABnNxAH4AoHEAfgDSc3EAfgCmc3EAfgCpdXEAfgCsAAAAAnNxAH4ArnEAfgCxcQB+ALVzcQB+AKBxAH4A0nNxAH4ApnNxAH4AqXVxAH4ArAAAAANzcQB+AK5xAH4A3HNxAH4ArnQAAmlvcQB+ALVzcQB+AKBxAH4A4HEAfgEAc3EAfgCgdAAGRXF1YWxzcQB+AQBzcQB+AKBxAH4A5HNxAH4ApnNxAH4AqXVxAH4ArAAAAANzcQB+AK5xAH4A3HNxAH4ArnEAfgDqcQB+ALVzcQB+AKBxAH4A7HEAfgEAcHBzcQB+AIZxAH4Ak3VxAH4AlAAAAABzcQB+ALYAcQB+AE91cQB+ALgAAAAAfnEAfgC6dAAGTW9kdWxldXEAfgC+AAAAAHNxAH4AwAFxAH4AxnBzcQB+AMABc3EAfgDIc3EAfgDAAXVxAH4AhAAAAAFzcgANeHNidGkuYXBpLkRlZlK+n+J8tDZpAgACTAAKcmV0dXJuVHlwZXEAfgCYWwAPdmFsdWVQYXJhbWV0ZXJzdAAaW0x4c2J0aS9hcGkvUGFyYW1ldGVyTGlzdDt4cQB+AIpxAH4Ak3VxAH4AlAAAAABzcQB+ALYAcQB+AC91cQB+ALgAAAAAc3EAfgCgdAAEVW5pdHNxAH4ApnNxAH4AqXVxAH4ArAAAAAJzcQB+AK5xAH4AsXEAfgC1dXIAGltMeHNidGkuYXBpLlBhcmFtZXRlckxpc3Q79dM6HfKzcO4CAAB4cAAAAAFzcgAXeHNidGkuYXBpLlBhcmFtZXRlckxpc3TWxbwcZEl04wIAAloACmlzSW1wbGljaXRbAApwYXJhbWV0ZXJzdAAcW0x4c2J0aS9hcGkvTWV0aG9kUGFyYW1ldGVyO3hwAHVyABxbTHhzYnRpLmFwaS5NZXRob2RQYXJhbWV0ZXI7z7jFXaXdtW0CAAB4cAAAAAFzcgAZeHNidGkuYXBpLk1ldGhvZFBhcmFtZXRlch9FrhfTSbDqAgAEWgAKaGFzRGVmYXVsdEwACG1vZGlmaWVydAAdTHhzYnRpL2FwaS9QYXJhbWV0ZXJNb2RpZmllcjtMAARuYW1lcQB+AA1MAAN0cGVxAH4AmHhwAH5yABt4c2J0aS5hcGkuUGFyYW1ldGVyTW9kaWZpZXIAAAAAAAAAABIAAHhxAH4Au3QABVBsYWludAAEYXJnc3NyABd4c2J0aS5hcGkuUGFyYW1ldGVyaXplZBZs7mkDybt/AgACTAAIYmFzZVR5cGVxAH4AoVsADXR5cGVBcmd1bWVudHN0ABFbTHhzYnRpL2FwaS9UeXBlO3hxAH4AonNxAH4AoHQABUFycmF5cQB+ASl1cQB+AM8AAAABc3EAfgCgdAAGU3RyaW5nc3EAfgCmc3EAfgCpdXEAfgCsAAAAA3NxAH4ArnEAfgDcc3EAfgCucQB+AOpxAH4AtXBzcQB+AMABdXEAfgCEAAAAAHBzcQB+AMABdXEAfgDPAAAAAnNxAH4AoHEAfgDkcQB+AUNzcQB+AKBxAH4A7HEAfgEpcHB1cgAUW0x4c2J0aS5hcGkuUGFja2FnZTtbExk3cKcnoQIAAHhwAAAAAHNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABTPbSWs91cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5cQB+AA1MAA9zb3VyY2VEaXJlY3RvcnlxAH4ADXhwdAAvL2hvbWUvdXNlci95ZWxwL3NjYWxhL3RhcmdldC9zY2FsYS0yLjEwL2NsYXNzZXN0AAEvdXIAAltCrPMX+AYIVOACAAB4cAAAABQdWf7WSgLDB58Uy6UADp1NbncBlg==
 external apis:
 0 items
 source infos:
@@ -486,7 +534,7 @@ source infos:
 /home/user/yelp/scala/src/main/scala/SimpleApp.scala -> 
 AAAAAAAAAAA=
 compilations:
-131 items
+154 items
 000 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABTJSp7cl1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQALy9ob21lL3VzZXIveWVscC9zY2FsYS90YXJnZXQvc2NhbGEtMi4xMC9jbGFzc2VzdAABLw==
 001 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABTJrsYK51cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQALy9ob21lL3VzZXIveWVscC9zY2FsYS90YXJnZXQvc2NhbGEtMi4xMC9jbGFzc2VzdAABLw==
 002 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABTJsYde11cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQALy9ob21lL3VzZXIveWVscC9zY2FsYS90YXJnZXQvc2NhbGEtMi4xMC9jbGFzc2VzdAABLw==
@@ -618,3 +666,26 @@ compilations:
 128 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABTPJ/w1h1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQALy9ob21lL3VzZXIveWVscC9zY2FsYS90YXJnZXQvc2NhbGEtMi4xMC9jbGFzc2VzdAABLw==
 129 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABTPKM8yN1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQALy9ob21lL3VzZXIveWVscC9zY2FsYS90YXJnZXQvc2NhbGEtMi4xMC9jbGFzc2VzdAABLw==
 130 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABTPKO7C91cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQALy9ob21lL3VzZXIveWVscC9zY2FsYS90YXJnZXQvc2NhbGEtMi4xMC9jbGFzc2VzdAABLw==
+131 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABTPLHiUB1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQALy9ob21lL3VzZXIveWVscC9zY2FsYS90YXJnZXQvc2NhbGEtMi4xMC9jbGFzc2VzdAABLw==
+132 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABTPLWwyN1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQALy9ob21lL3VzZXIveWVscC9zY2FsYS90YXJnZXQvc2NhbGEtMi4xMC9jbGFzc2VzdAABLw==
+133 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABTPLYxk91cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQALy9ob21lL3VzZXIveWVscC9zY2FsYS90YXJnZXQvc2NhbGEtMi4xMC9jbGFzc2VzdAABLw==
+134 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABTPLkHyh1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQALy9ob21lL3VzZXIveWVscC9zY2FsYS90YXJnZXQvc2NhbGEtMi4xMC9jbGFzc2VzdAABLw==
+135 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABTPLsvtV1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQALy9ob21lL3VzZXIveWVscC9zY2FsYS90YXJnZXQvc2NhbGEtMi4xMC9jbGFzc2VzdAABLw==
+136 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABTPLuW711cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQALy9ob21lL3VzZXIveWVscC9zY2FsYS90YXJnZXQvc2NhbGEtMi4xMC9jbGFzc2VzdAABLw==
+137 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABTPLwRoN1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQALy9ob21lL3VzZXIveWVscC9zY2FsYS90YXJnZXQvc2NhbGEtMi4xMC9jbGFzc2VzdAABLw==
+138 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABTPL5nv51cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQALy9ob21lL3VzZXIveWVscC9zY2FsYS90YXJnZXQvc2NhbGEtMi4xMC9jbGFzc2VzdAABLw==
+139 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABTPMslfB1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQALy9ob21lL3VzZXIveWVscC9zY2FsYS90YXJnZXQvc2NhbGEtMi4xMC9jbGFzc2VzdAABLw==
+140 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABTPMtmtZ1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQALy9ob21lL3VzZXIveWVscC9zY2FsYS90YXJnZXQvc2NhbGEtMi4xMC9jbGFzc2VzdAABLw==
+141 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABTPMuSaB1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQALy9ob21lL3VzZXIveWVscC9zY2FsYS90YXJnZXQvc2NhbGEtMi4xMC9jbGFzc2VzdAABLw==
+142 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABTPM0BVB1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQALy9ob21lL3VzZXIveWVscC9zY2FsYS90YXJnZXQvc2NhbGEtMi4xMC9jbGFzc2VzdAABLw==
+143 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABTPM0xUV1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQALy9ob21lL3VzZXIveWVscC9zY2FsYS90YXJnZXQvc2NhbGEtMi4xMC9jbGFzc2VzdAABLw==
+144 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABTPM2igJ1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQALy9ob21lL3VzZXIveWVscC9zY2FsYS90YXJnZXQvc2NhbGEtMi4xMC9jbGFzc2VzdAABLw==
+145 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABTPM4zZ11cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQALy9ob21lL3VzZXIveWVscC9zY2FsYS90YXJnZXQvc2NhbGEtMi4xMC9jbGFzc2VzdAABLw==
+146 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABTPM5gMx1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQALy9ob21lL3VzZXIveWVscC9zY2FsYS90YXJnZXQvc2NhbGEtMi4xMC9jbGFzc2VzdAABLw==
+147 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABTPM+WnJ1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQALy9ob21lL3VzZXIveWVscC9zY2FsYS90YXJnZXQvc2NhbGEtMi4xMC9jbGFzc2VzdAABLw==
+148 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABTPNAk7Z1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQALy9ob21lL3VzZXIveWVscC9zY2FsYS90YXJnZXQvc2NhbGEtMi4xMC9jbGFzc2VzdAABLw==
+149 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABTPNB0V11cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQALy9ob21lL3VzZXIveWVscC9zY2FsYS90YXJnZXQvc2NhbGEtMi4xMC9jbGFzc2VzdAABLw==
+150 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABTPNDezF1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQALy9ob21lL3VzZXIveWVscC9zY2FsYS90YXJnZXQvc2NhbGEtMi4xMC9jbGFzc2VzdAABLw==
+151 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABTPNLTpp1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQALy9ob21lL3VzZXIveWVscC9zY2FsYS90YXJnZXQvc2NhbGEtMi4xMC9jbGFzc2VzdAABLw==
+152 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABTPbMSNp1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQALy9ob21lL3VzZXIveWVscC9zY2FsYS90YXJnZXQvc2NhbGEtMi4xMC9jbGFzc2VzdAABLw==
+153 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABTPbSWs91cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQALy9ob21lL3VzZXIveWVscC9zY2FsYS90YXJnZXQvc2NhbGEtMi4xMC9jbGFzc2VzdAABLw==

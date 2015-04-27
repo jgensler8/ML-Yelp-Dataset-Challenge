@@ -24,7 +24,7 @@ import org.apache.spark.sql.Row
 import scala.beans.BeanInfo
 
 @BeanInfo
-case class LabeledDocument(id: Long, text: String, label: Double)
+case class LabeledDocument(id: Long, text: String, label: Double, b_id: String)
 
 @BeanInfo
 case class Document(id: Long, text: String)
@@ -38,6 +38,9 @@ object SimpleApp {
   val userPath = "/tmp/data/yelp_academic_dataset_user.json"
   val userParquetFile = "yelp_user.parquet"
   val serviceCsvFile = "/tmp/service_db_noquote.csv"
+  val predictionCsvFile = "/tmp/predictions.csv"
+  val businessRatingsCsvFile = "/tmp/business_ratings.csv"
+  val businessWeightedService = "/tmp/business_service_weight_and_count.csv"
 
   // This is category to isolate for stage2B
   val category = "Mexican"
@@ -54,7 +57,8 @@ object SimpleApp {
       stage2B: Boolean = false,
       stage4: Boolean = false,
       stage6A: Boolean = false,
-      stage6B: Boolean = false
+      stage6B: Boolean = false,
+      stage7: Boolean = false
     )
 
     val parser = new scopt.OptionParser[Config]("scopt") {
@@ -73,6 +77,8 @@ object SimpleApp {
         c.copy(stage6A = true) } text("Run stage6A: launch LDA pipeline on reviews")
       opt[Unit]("stage6B") action { (_, c) =>
         c.copy(stage6B = true) } text("Run stage6B: launch Logistic Regression pipeline on service.csv")
+      opt[Unit]("stage7") action { (_, c) =>
+        c.copy(stage7 = true) } text("Run stage7: join labeled data with restaurant csv")
 
       help("help") text("show help text")
     }
@@ -95,6 +101,8 @@ object SimpleApp {
         if(config.stage6A) stage6A(sc)
 
         if(config.stage6B) stage6B(sc)
+
+        if(config.stage7) stage7(sc)
 
       case None =>
         // arguments are bad, error message will have been displayed
@@ -334,7 +342,7 @@ object SimpleApp {
         case _ => 0D
       })
 
-      LabeledDocument(0L,review,label)
+      LabeledDocument(0L,review,label,row(0).toString)
     } : LabeledDocument
 
     val servicecsv = sqlContext
@@ -343,7 +351,6 @@ object SimpleApp {
 
     val split = servicecsv.randomSplit(Array(.8,.2))
 
-    //these might overlap
     val training = split(0)
       .toDF()
 
@@ -375,11 +382,13 @@ object SimpleApp {
     val results = model.transform(testing)
 
     results
-    .select("id","text","label","prediction")
-    .saveAsCsvFile("predictions.csv")
+      .select("id","text","label","prediction","b_id")
+      .saveAsCsvFile(predictionCsvFile, Map("header" -> "true"))
+
+    results.printSchema()
 
     val map_checker = (row: Row) => {
-      (row(2) == row(7) match {
+      (row(2) == row(8) match {
         case true => 1
         case false => 0
       })
@@ -393,6 +402,31 @@ object SimpleApp {
     println(s"count = $count, accuracy = $accuracy")
     println(s"testingCount = $testingCount, trainingCount = $trainingCount, servicecsvCount = $servicecsvCount")
 
+  }
+
+  def stage7(sc: SparkContext)
+  {
+    val sqlContext = new org.apache.spark.sql.SQLContext(sc)
+
+    val predictions = sqlContext
+      .csvFile(predictionCsvFile)
+
+    predictions.printSchema()
+    predictions.show()
+
+    val businessRatings = sqlContext
+      .csvFile(businessRatingsCsvFile)
+
+    businessRatings.printSchema()
+    businessRatings.show()
+
+    val joined = predictions
+      .join(businessRatings, (predictions("b_id") === businessRatings("business_id")), "inner")
+      .groupBy("business_id")
+      .agg(Map("label" -> "avg", "prediction" -> "count"))
+      .repartition(1)
+      .saveAsCsvFile(businessWeightedService, Map("header" -> "true"))
+    
   }
 
 }
