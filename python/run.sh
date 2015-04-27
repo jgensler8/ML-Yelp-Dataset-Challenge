@@ -1,7 +1,7 @@
 #
 # CHANGE THIS PATH
 #
-YELPDIR=/home/$USER/Downloads/yelp_dataset_challenge_academic_dataset/
+YELPDIR=/tmp
 
 #
 # path ought to be absolute
@@ -13,13 +13,13 @@ LABELEDDIR=$CMDDIR/labeled-data
 #
 # from last time
 #
-docker stop hdfsyelp
-docker rm hdfsyelp
+#docker stop hdfsyelp
+#docker rm hdfsyelp
 
-docker run -d \
- -P \
- --name hdfsyelp \
- besn0847/hdfs
+#docker run -d \
+# -P \
+# --name hdfsyelp \
+# besn0847/hdfs
 
 
 #
@@ -27,13 +27,15 @@ docker run -d \
 #
 docker rm python-yelp
 
-docker run -t -i \
+# --link hdfsyelp:hdfsyelp \
+# -t -i \
+docker run \
+ -d \
  -w /tmp \
  -v $YELPDIR:/tmp/data \
  -v $SCRIPTSDIR:/tmp/scripts \
  -v $LABELEDDIR:/tmp/labeled-data \
  -p 8888:8888 \
- -e "PASSWORD=password" \
- --link hdfsyelp:hdfsyelp \
+ -e "PASSWORD=<><><><>" \
  --name python-yelp \
  ipython/scipyserver 
