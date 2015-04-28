@@ -31,7 +31,7 @@ X_test = [x[1:] for x in X_test_all]
 labels = ['^', 'o', 'h', '*', '+' ,'x', 's', 'p', 'D', '<', '>', 'v']
 colors = ["blue", "yellow", "green", "red", "black", "purple", "orange", "grey", "teal", "tan"]
 
-for size in range(2,5):
+for size in range(2,10):
     # Fit the training data to clusters
     c = cluster.SpectralClustering(n_clusters=size)
     c.fit(X_train)
@@ -42,6 +42,7 @@ for size in range(2,5):
     ax.set_xlabel("service")
     ax.set_ylabel("location")
     ax.set_zlabel("price")
+    ax.set_title("Total Restaurants: " + str(len(X_train)))
     
     # Gather our data to be potted
     all_data = zip(c.labels_, X_train, Y_train, X_train_names)
@@ -63,7 +64,7 @@ for size in range(2,5):
         Y = map(lambda x: x[1], X_s)
         Z = map(lambda x: x[2], X_s)
         mostCommonNames = Counter( [point["name"].lower() for point in c] ).most_common(2)
-        Label = str(round(np.average(Y_s),3)) + " " + str(mostCommonNames)
+        Label = str("Avg: " + str(round(np.average(Y_s),3))) + " Size:" + str(len(c)) + " " + str(mostCommonNames)
         ax.scatter( X, Y, Z, marker=labels[cluster_label], c=colors[cluster_label], label=Label)
      
     # Put legend to the right of graph
